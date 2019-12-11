@@ -4,7 +4,6 @@ from pathlib import Path
 import datetime as dt
 
 import click
-from website import Website
 from flask import Flask
 
 app = Flask(__name__)
