@@ -2,7 +2,13 @@ import http.server
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from pathlib import Path
 import datetime as dt
+
+import click
 from website import Website
+from flask import Flask
+
+app = Flask(__name__)
+
 
 _INDEX_HTML = '''
 <html>
@@ -39,10 +45,12 @@ _INDEX_USER = '''
 '''
 
 
+@click.command()
+@click.argument('address')
+@click.argument('data_dir')
 def run_webserver(address, data_dir):
-    website = Website()
 
-    @website.route('/')
+    @app.route('/')
     def index():
         users_html = []
         html_path = Path(data_dir)
@@ -50,7 +58,7 @@ def run_webserver(address, data_dir):
             users_html.append(_USER_LINE_HTML.format(user_id=user_dir.name))
         return 200, _INDEX_HTML.format(users='\n'.join(users_html))
 
-    @website.route('/users/([0-9]+)')
+    @app.route('/users/([0-9]+)')
     def user(user_id):
         users_html = []
         html_path = Path(data_dir) / str(user_id)
@@ -67,7 +75,7 @@ def run_webserver(address, data_dir):
                 users_html.append(_THOUGHT.format(time=datetime, thought=f.read()))
         return 200, _INDEX_USER.format(thoughts='\n'.join(users_html), user_id=user_id)
 
-    website.run(address)
+    app.run(address)
 
 
 def main(argv):

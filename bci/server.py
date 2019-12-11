@@ -3,13 +3,11 @@ import socket
 import struct
 import threading
 from pathlib import Path
-
-from cli import CommandLineInterface
+import click
 
 _SERVER_BACKLOG = 1000
 _HEADER_FORMAT = 'QQI'
 _HEADER_SIZE = struct.calcsize(_HEADER_FORMAT)
-cli = CommandLineInterface()
 
 
 def _format_timestamp(timestamp):
@@ -57,7 +55,9 @@ class Handler(threading.Thread):
             self.lock.release()
 
 
-@cli.command
+@click.command()
+@click.argument('address')
+@click.argument('data')
 def run(address, data):
     ip_address, port = address.split(":")
     try:
@@ -79,10 +79,5 @@ def run(address, data):
         print('Error -  Message {}'.format(e))
 
 
-def main(argv):
-    cli.main()
-
-
 if __name__ == '__main__':
-    import sys
-    sys.exit(main(sys.argv))
+    pass

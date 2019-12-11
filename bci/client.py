@@ -1,10 +1,9 @@
 import datetime as dt
 import socket
 import struct
-from cli import CommandLineInterface
+import click
 
 _HEADER_FORMAT = 'QQI'
-cli = CommandLineInterface()
 
 
 def _serialize_thought(user_id, timestamp, thought):
@@ -12,7 +11,10 @@ def _serialize_thought(user_id, timestamp, thought):
     return header + thought.encode()
 
 
-@cli.command
+@click.command()
+@click.argument('address')
+@click.argument('user', type=int)
+@click.argument('thought')
 def upload(address, user, thought):
     ip_address, port = address.split(":")
     timestamp = int(dt.datetime.now().timestamp())
@@ -26,10 +28,5 @@ def upload(address, user, thought):
         print("Error - Failed sending message {}".format(e))
 
 
-def main(argv):
-    cli.main()
-
-
 if __name__ == '__main__':
-    import sys
-    sys.exit(main(sys.argv))
+    pass
