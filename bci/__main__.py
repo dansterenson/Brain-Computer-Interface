@@ -20,6 +20,24 @@ def upload_thought(address, user, thought):
         return 1
 
 
+@click.command()
+@click.argument('address')
+@click.argument('data')
+def run(address, data):
+    try:
+        server.run(address, data)
+    except Exception as e:
+        print(f'ERROR: {e}')
+        return 1
+
+
+@click.command()
+@click.argument('address')
+@click.argument('data_dir')
+def run(address, data):
+    web.run_webserver(address, data)
+
+
 if __name__ == "__main__":
     cli()
 

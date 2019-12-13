@@ -44,9 +44,6 @@ _INDEX_USER = '''
 '''
 
 
-@click.command()
-@click.argument('address')
-@click.argument('data_dir')
 def run_webserver(address, data_dir):
 
     @app.route('/')

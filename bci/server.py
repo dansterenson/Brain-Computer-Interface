@@ -57,9 +57,7 @@ class Handler(threading.Thread):
             self.lock.release()
 
 
-@click.command()
-@click.argument('address')
-@click.argument('data')
+
 def run(address, data):
     ip_address, port = address.split(":")
     try:
