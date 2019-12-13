@@ -3,6 +3,8 @@ import socket
 import struct
 import click
 
+from .thought import Thought
+from .utils import Connection
 _HEADER_FORMAT = 'QQI'
 
 
@@ -11,11 +13,7 @@ def _serialize_thought(user_id, timestamp, thought):
     return header + thought.encode()
 
 
-@click.command()
-@click.argument('address')
-@click.argument('user', type=int)
-@click.argument('thought')
-def upload(address, user, thought):
+def upload_thought(address, user, thought):
     ip_address, port = address.split(":")
     timestamp = int(dt.datetime.now().timestamp())
     message = _serialize_thought(int(user), timestamp, thought)
@@ -28,5 +26,3 @@ def upload(address, user, thought):
         print("Error - Failed sending message {}".format(e))
 
 
-if __name__ == '__main__':
-    pass

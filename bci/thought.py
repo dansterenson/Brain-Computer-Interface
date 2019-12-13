@@ -1,6 +1,7 @@
 from datetime import datetime
 import struct
 
+
 _HEADER_FORMAT = 'QQI'
 
 

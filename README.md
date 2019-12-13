@@ -1,14 +1,14 @@
 
-# Brain Computer Interface
+# Brain_Computer_Interface
 
 ## Installation
 
 1. Clone the repository and enter it:
 
     ```sh
-    $ git clone git@github.com:dan-gittik/Brain-Computer-Interface.git
+    $ git clone git@github.com:dansterenson/Brain_Computer_Interface.git
     ...
-    $ cd foobar/
+    $ cd Brain_Computer_Interface/
     ```
 
 2. Run the installation script and activate the virtual environment:
@@ -17,7 +17,7 @@
     $ ./scripts/install.sh
     ...
     $ source .env/bin/activate
-    [foobar] $ # you're good to go!
+    [Brain_Computer_Interface] $ # you're good to go!
     ```
 
 3. To check that everything is working as expected, run the tests:
@@ -30,9 +30,13 @@
 
 ## Usage
 
-The `foobar` packages provides the following classes:
+The `bci` package provides the following classes:
 
-- `Foo`
+- `Thought`, `utils.Listener` and `Thought.Connection`
+
+and provides the following functions:
+
+    `run_server`:
 
     This class encapsulates the concept of `foo`, and returns `"foo"` when run.
 

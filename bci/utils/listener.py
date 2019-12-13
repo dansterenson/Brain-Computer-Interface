@@ -1,5 +1,5 @@
-from connection import Connection
 import socket
+from .connection import Connection
 
 
 class Listener:
@@ -13,7 +13,6 @@ class Listener:
     def __repr__(self):
         return f"Listener(port={self.port}, host='{self.host}', backlog={self.backlog}, reuseaddr={self.reuseaddr})"
 
-
     def accept(self):
         try:
             conn, address = self.sever.accept()
@@ -22,6 +21,10 @@ class Listener:
             return e
 
     def __enter__(self):
+        self.start()
+        return self
+
+    def start(self):
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         if self.reuseaddr:
             server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -30,4 +33,7 @@ class Listener:
         self.sever = server
 
     def __exit__(self, exc_type, exc_val, exc_tb):
+        self.stop()
+
+    def stop(self):
         self.sever.close()
