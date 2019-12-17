@@ -71,7 +71,7 @@ def run_webserver(address, data_dir):
                 users_html.append(_THOUGHT.format(time=datetime, thought=f.read()))
         return 200, _INDEX_USER.format(thoughts='\n'.join(users_html), user_id=user_id)
 
-    app.run(address)
+    app.run_server(address)
 
 
 def main(argv):

@@ -3,9 +3,10 @@ import socket
 import struct
 import threading
 from pathlib import Path
-import click
+
 from .utils import Connection
 from .utils import Listener
+from .thought import Thought
 
 _SERVER_BACKLOG = 1000
 _HEADER_FORMAT = 'QQI'
@@ -57,8 +58,7 @@ class Handler(threading.Thread):
             self.lock.release()
 
 
-
-def run(address, data):
+def run_server(address, data):
     ip_address, port = address.split(":")
     try:
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
