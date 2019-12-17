@@ -13,6 +13,7 @@ def upload_thought(address, user, thought):
         with Connection.connect(ip_address, int(port)) as con:
             con.sendall(thought_obj.serialize())
             print("done")
+
     except socket.error as e:
         print("Error - Failed sending message {}".format(e))
 
