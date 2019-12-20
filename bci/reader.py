@@ -1,5 +1,10 @@
 import struct
 
+def read_snapshot(file_to_read, bytes_format):
+    size = struct.calcsize(bytes_format)
+    n_bytes = file_to_read.read(size)
+    return struct.unpack(bytes_format, n_bytes)
+
 
 class Reader:
     def __init__(self, path_of_sample):
@@ -7,44 +12,32 @@ class Reader:
         self.user = self.get_new_user()
 
     def get_new_user(self):
-        user_format = 'QQIc'
-        size = struct.calcsize(user_format)
-        user_in_bytes = self.file.read(size)
-        user_id, name_in_bits, birth_date, gender = struct.unpack('QIIc', user_in_bytes)
-        user_name = name_in_bits.decode()
-        gender = gender.decode()
-        return User(user_id, user_name, birth_date, gender)
+        user_id, user_name_length = read_snapshot(self.file, 'QI')
+        user_name_bytes = read_snapshot(self.file, '%ds' % user_name_length)
+        user_name = user_name_bytes[0].decode()
+        user_b_date, user_gender_bytes = read_snapshot(self.file, 'Ic')
+        user_gender = user_gender_bytes.decode()
+        return User(user_id, user_name, user_b_date, user_gender)
 
     def get_user_snapshot(self):
         # timestamp, translation, rotation size
-        ttr_size = 'Q3d4d'
-        size = struct.calcsize(ttr_size)
-        ttr_in_bytes = self.file.read(size)
-        timestamp, translation, rotation = struct.unpack('Q3d4d', ttr_in_bytes)
+        timestamp, translation, rotation = read_snapshot(self.file, 'Q3d4d')
 
-        img_height_width = 'II'
-        size = struct.calcsize(img_height_width)
-        img_in_bytes = self.file.read(size)
-        img_height, img_width = struct.unpack('II', img_in_bytes)
+        # img height and width
+        img_height, img_width = read_snapshot(self.file, 'II')
 
+        # BRG values
         BGR_values = self.file.read(img_height * img_width * 3)
 
-        depth_height_width = 'II'
-        size = struct.calcsize(depth_height_width)
-        depth_in_bytes = self.file.read(size)
-        depth_height, depth_width = struct.unpack('II', depth_in_bytes)
+        # img depth height and width
+        depth_height, depth_width = read_snapshot(self.file, 'II')
 
-        depth_val_size = f'{depth_height} * {depth_width}f'
-        size = struct.calcsize(depth_val_size)
-        depth_vals_bytes = self.file.read(size)
-        depth_vals = struct.unpack(f'{depth_height} * {depth_width}f', depth_vals_bytes)
+        # img depth vals
+        depth_vals = read_snapshot(self.file, f'{depth_height} * {depth_width}f')
+
 
         # hunger, thirst, exhaustion happiness size
-        hteh_size = '4f'
-        size = struct.calcsize(hteh_size)
-        hteh_in_bytes = self.file.read(size)
-        hunger, thirst, exhaustion, happiness = struct.unpack('4f', hteh_in_bytes)
-
+        hunger, thirst, exhaustion, happiness = read_snapshot(self.file, '4f')
         return
 
     def __next__(self):
