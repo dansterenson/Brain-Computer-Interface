@@ -1,7 +1,6 @@
 import click
-import pathlib
 from .add_parser import AddParser
-from ..msg_queue import MessageQueue
+from server.msg_queue import MessageQueue
 @click.group()
 def cli():
     pass

@@ -1,5 +1,5 @@
-from ..readers.haruspex_pb2 import User
-from ..readers.haruspex_pb2 import Snapshot
+from readers import User
+from readers import Snapshot
 
 
 def serialize(message):

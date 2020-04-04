@@ -2,64 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/PKG-INFO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/SOURCES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/dependency_links.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/requires.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/top_level.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/msg_queue/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/msg_queue/msg_queue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/msg_queue/rabbitMQ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_feelings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_pose.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/readers/Add_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/utils/client_server_protocol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/Add_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/main_parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/parse_color_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/parse_translation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/thought.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/listener.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/protocol.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/lib/bci/web.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/Brain_Computer_Interface-0.1.0-py3.8.egg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/Add_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/abstract_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/binary_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/haruspex.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/haruspex_pb2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/main_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/protobuff_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/server/server_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/client.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/reader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/thought.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/utils/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/utils/connection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/utils/listener.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/utils/protocol.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bci/web.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_connection_from_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_connection_from_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_connection_from_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_connection_from_4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_listener_from_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_listener_from_3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_listener_from_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_listener_from_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/msg_queue/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/msg_queue/msg_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/msg_queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/msg_queue/rabbitMQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/rabbitMQ.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/Add_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/Add_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/abstract_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/abstract_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/binary_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/binary_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/haruspex.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/haruspex.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/haruspex_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/haruspex_pb2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/main_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/main_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/readers/protobuff_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/protobuff_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/server/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/utils/client_server_protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/utils/client_server_protocol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Haruspex" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,19 +53,22 @@
   <component name="ProjectId" id="1UpwQvD8vdVDiad2VGKDMzCqYTU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Haruspex/server/readers" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Haruspex/msg_queue" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Haruspex/server/readers" />
       <recent name="$PROJECT_DIR$/Haruspex/server" />
       <recent name="$PROJECT_DIR$/Haruspex/client" />
-      <recent name="$PROJECT_DIR$/bci" />
-      <recent name="$PROJECT_DIR$/tests" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bci/utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Haruspex/server" />
+      <recent name="$PROJECT_DIR$/Haruspex/client/readers" />
+      <recent name="$PROJECT_DIR$/Haruspex/client" />
+      <recent name="$PROJECT_DIR$/Haruspex/msg_queue" />
+      <recent name="$PROJECT_DIR$/bci" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,8 +83,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.__main__">
-    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.__main__ (1)">
+    <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="client" />
+      <option name="PARAMETERS" value="upload-sample $PROJECT_DIR$/Haruspex/sample_updated.mind.gz" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__main__ (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Haruspex" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,6 +122,48 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__main__ (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="server" />
+      <option name="PARAMETERS" value="run-server" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/client" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="client" />
+      <option name="PARAMETERS" value="'$PROJECT_DIR$/Haruspex/sample_updated.mind.gz'" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
@@ -167,99 +212,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Haruspex" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYCHARM_DEBUG" value="True" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bci" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/client" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bci/server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test23" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Haruspex" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYCHARM_DEBUG" value="True" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bci" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bci/test23.py" />
+      <option name="SCRIPT_NAME" value="client" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="MODULE_MODE" value="true" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_connection_from_4.test_connect" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Haruspex" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_connection_from_4.test_connect&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_listener_from_3.test_accept" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Haruspex" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYCHARM_DEBUG" value="True" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_listener_from_3.test_accept&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.cli_server" />
       <item itemvalue="Python.cli_client" />
-      <item itemvalue="Python.test23" />
-      <item itemvalue="Python.server" />
-      <item itemvalue="Python tests.pytest for test_connection_from_4.test_connect" />
-      <item itemvalue="Python tests.pytest for test_listener_from_3.test_accept" />
       <item itemvalue="Python.__main__" />
+      <item itemvalue="Python.client" />
+      <item itemvalue="Python.__main__ (1)" />
+      <item itemvalue="Python.__main__ (2)" />
+      <item itemvalue="Python.__main__ (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__main__ (1)" />
+        <item itemvalue="Python.__main__ (3)" />
+        <item itemvalue="Python.__main__ (2)" />
         <item itemvalue="Python.__main__" />
-        <item itemvalue="Python.test23" />
-        <item itemvalue="Python.server" />
-        <item itemvalue="Python tests.pytest for test_listener_from_3.test_accept" />
-        <item itemvalue="Python tests.pytest for test_connection_from_4.test_connect" />
+        <item itemvalue="Python.client" />
       </list>
     </recent_temporary>
   </component>
@@ -308,9 +297,34 @@
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/client/__main__.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="251" />
+          <url>file://$PROJECT_DIR$/Haruspex/client/client.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/client/client.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="305" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/server/msg_queue/msg_queue.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="306" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
