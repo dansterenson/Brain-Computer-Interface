@@ -1,4 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/PKG-INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/SOURCES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/dependency_links.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/requires.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Brain_Computer_Interface.egg-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/msg_queue/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/msg_queue/msg_queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/msg_queue/rabbitMQ.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_feelings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_pose.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/readers/Add_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/utils/client_server_protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/Add_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/main_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/parse_color_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/parsers/parse_translation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/thought.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/listener.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/utils/protocol.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/lib/bci/web.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Brain_Computer_Interface-0.1.0-py3.8.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/thought.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/utils/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/utils/listener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/utils/protocol.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bci/web.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_connection_from_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_connection_from_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_connection_from_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_connection_from_4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_listener_from_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_listener_from_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_utils/test_listener_from_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_listener_from_4.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UpwQvD8vdVDiad2VGKDMzCqYTU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Haruspex/msg_queue" />
+      <recent name="$PROJECT_DIR$/Haruspex/server" />
+      <recent name="$PROJECT_DIR$/Haruspex/client" />
+      <recent name="$PROJECT_DIR$/bci" />
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bci/utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.__main__">
+    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/client" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Haruspex/client/__main__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_client" type="PythonConfigurationType" factoryName="Python" singleton="false">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYCHARM_DEBUG" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bci" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bci/__main__.py" />
+      <option name="PARAMETERS" value="client upload" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli_server" type="PythonConfigurationType" factoryName="Python" singleton="false">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYCHARM_DEBUG" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bci" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bci/__main__.py" />
+      <option name="PARAMETERS" value="server run" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYCHARM_DEBUG" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bci" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bci/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test23" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYCHARM_DEBUG" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bci" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bci/test23.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_connection_from_4.test_connect" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_connection_from_4.test_connect&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_listener_from_3.test_accept" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYCHARM_DEBUG" value="True" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_listener_from_3.test_accept&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.cli_server" />
+      <item itemvalue="Python.cli_client" />
+      <item itemvalue="Python.test23" />
+      <item itemvalue="Python.server" />
+      <item itemvalue="Python tests.pytest for test_connection_from_4.test_connect" />
+      <item itemvalue="Python tests.pytest for test_listener_from_3.test_accept" />
+      <item itemvalue="Python.__main__" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.__main__" />
+        <item itemvalue="Python.test23" />
+        <item itemvalue="Python.server" />
+        <item itemvalue="Python tests.pytest for test_listener_from_3.test_accept" />
+        <item itemvalue="Python tests.pytest for test_connection_from_4.test_connect" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="" />
+      <created>1576922109867</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576922109867</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/build/lib/bci/utils/connection.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/utils/protoco1l.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tamir.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/client/__main__.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
 </project>
