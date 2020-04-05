@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/Add_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/abstract_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/binary_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/haruspex.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/haruspex_pb2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/main_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/readers/protobuff_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Haruspex/server/server_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/msg_queue/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/msg_queue/msg_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/msg_queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/msg_queue/rabbitMQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/rabbitMQ.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/Add_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/Add_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/abstract_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/abstract_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/binary_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/binary_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/haruspex.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/haruspex.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/haruspex_pb2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/haruspex_pb2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/main_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/main_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/readers/protobuff_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/client/readers/protobuff_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/server/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/utils/client_server_protocol.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/utils/client_server_protocol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/server/server_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/server_new.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.__main__ (1)">
+  <component name="RunManager" selected="Python.__main__ (4)">
     <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Haruspex" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,6 +115,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="server" />
       <option name="PARAMETERS" value="run-server" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__main__ (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="parsers" />
+      <option name="PARAMETERS" value="run-parser pose rabbitmq://127.0.0.1:5672/" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -212,43 +208,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Haruspex" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/client" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="client" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.cli_server" />
       <item itemvalue="Python.cli_client" />
       <item itemvalue="Python.__main__" />
-      <item itemvalue="Python.client" />
       <item itemvalue="Python.__main__ (1)" />
       <item itemvalue="Python.__main__ (2)" />
       <item itemvalue="Python.__main__ (3)" />
+      <item itemvalue="Python.__main__ (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.__main__ (4)" />
         <item itemvalue="Python.__main__ (1)" />
         <item itemvalue="Python.__main__ (3)" />
         <item itemvalue="Python.__main__ (2)" />
         <item itemvalue="Python.__main__" />
-        <item itemvalue="Python.client" />
       </list>
     </recent_temporary>
   </component>
@@ -297,34 +272,39 @@
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/client/client.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/client/client.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="289" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
-          <line>76</line>
+          <line>113</line>
           <option name="timeStamp" value="295" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
-          <line>64</line>
+          <line>101</line>
           <option name="timeStamp" value="298" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
-          <line>57</line>
+          <line>94</line>
           <option name="timeStamp" value="305" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Haruspex/server/msg_queue/msg_queue.py</url>
           <line>7</line>
           <option name="timeStamp" value="306" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="309" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="311" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

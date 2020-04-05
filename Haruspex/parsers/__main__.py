@@ -1,3 +1,4 @@
+import json
 import click
 from .add_parser import AddParser
 from server.msg_queue import MessageQueue
@@ -33,6 +34,13 @@ def run_parser_cmd(parser_name, message_queue_url): #TODO
     message_queue.exchange_declaration("snapshots")
     message_queue.queue_declaration(parser_name)
     message_queue.queue_binding(parser_name, 'snapshots')
+
+    def callback_func(ch, method, properties, body):
+        data = json.loads(body)
+        parsed = cur_parser(data)
+        message_queue.queue_publish(parser_name, '', json.dumps(parsed))
+
+    message_queue.consume_from_queue(parser_name, callback_func)
 
 
 if __name__ == '__main__':
