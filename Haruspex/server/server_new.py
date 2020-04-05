@@ -91,7 +91,6 @@ def json_for_publish(user, snapshot):
     return j_data
 
 
-
 def publish_function(message_to_publish):
     mq = MessageQueue(mq_url)
     mq.exchange_declaration('snapshots')
