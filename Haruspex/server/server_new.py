@@ -4,21 +4,16 @@ from readers.haruspex_pb2 import Combined as CombinedProto
 from flask import request
 from flask import Flask, make_response
 from .msg_queue import MessageQueue
-from Haruspex.utils.load_save_data import LoadSaveData
+from Haruspex.utils.load_save_data import SaveData
 
 app = Flask(__name__)
 mq_url = None
 publish_func = None
 
 
-class User:
+class UserWrapper:
     def __init__(self, user):
-        self.user_id = None
-        self.username = None
-        self.birthday = None
-        self.gender = None
 
-    def get_user(self, user):
         self.user_id = user.user_id
         self.username = user.username
         self.birthday = user.birthday
@@ -30,16 +25,9 @@ class User:
             self.gender = 'o'
 
 
-class Snapshot:
-    def __init__(self, user):
-        self.timestamp = None
-        self.translation = None
-        self.rotation = None
-        self.color_image = None
-        self.depth_image = None
-        self.feelings = None
+class SnapshotWrapper:
+    def __init__(self, snapshot):
 
-    def get_snapshot(self, snapshot):
         self.timestamp = snapshot.datetime
 
         self.translation = (snapshot.pose.translation.x,
@@ -66,28 +54,29 @@ class Snapshot:
 
 
 def json_for_publish(user, snapshot):
-    wrapped_user = User(user)
-    wrapped_snapshot = Snapshot(snapshot)
+
+    wrapped_user = UserWrapper(user)
+    wrapped_snapshot = SnapshotWrapper(snapshot)
     color_width, color_height, color_data = wrapped_snapshot.color_image
     depth_width, depth_height, depth_data = wrapped_snapshot.depth_image
 
-    color_created_path = LoadSaveData(wrapped_user.user_id, snapshot.datetime, 'color_image')
-    depth_created_path = LoadSaveData(wrapped_user.user_id, snapshot.datetime, 'depth_image')
+    color_data_obj = SaveData(wrapped_user.user_id, snapshot.datetime, 'color_image')
+    depth_data_obj = SaveData(wrapped_user.user_id, snapshot.datetime, 'depth_image')
 
-    color_created_path.save_to_file('color_image_data', color_data)
-    depth_created_path.save_to_file('depth_image_data', str(depth_data).encode())
+    color_created_path = color_data_obj.save_to_file('color_image_data', color_data)
+    depth_created_path = depth_data_obj.save_to_file('depth_image_data', str(depth_data).encode())
 
     j_data = json.dumps({
-        'user_id': user.user_id,
-        'user_name': user.username,
-        'birthday': user.birthday,
-        'gender': user.gender,
-        'timestamp': snapshot.datetime,
-        'translation': snapshot.translation,
-        'rotation': snapshot.rotation,
-        'color_image': [color_width, color_height, str(color_created_path).join('/color_image_data')],
-        'depth_image': [depth_width, depth_height, str(depth_created_path).join('/depth_image_data')],
-        'feelings': snapshot.feelings})
+        'user_id': wrapped_user.user_id,
+        'user_name': wrapped_user.username,
+        'birthday': wrapped_user.birthday,
+        'gender': wrapped_user.gender,
+        'timestamp': wrapped_snapshot.timestamp,
+        'translation': wrapped_snapshot.translation,
+        'rotation': wrapped_snapshot.rotation,
+        'color_image': [color_width, color_height, color_created_path],
+        'depth_image': [depth_width, depth_height, depth_created_path],
+        'feelings': wrapped_snapshot.feelings})
     return j_data
 
 

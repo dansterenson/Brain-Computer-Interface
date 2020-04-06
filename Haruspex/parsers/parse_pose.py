@@ -1,8 +1,8 @@
-from .add_parser import AddParser
+from . import add_to_parser_list
 from .main_parser import MainParser
 
 
-@AddParser.add_to_parser_list("pose")
+@add_to_parser_list("pose")
 class ParsePose(MainParser):
     @classmethod
     def parse(cls, data):

@@ -1,14 +1,13 @@
-import numpy as np
+from . import add_to_parser_list
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
-from Haruspex.parsers import MainParser
-from Haruspex.parsers import AddParser
+from .main_parser import MainParser
 
 from PIL import Image
 import pathlib
 
 
-@AddParser.add_to_parser_list("depth_image")
+@add_to_parser_list("depth_image")
 class ParseDepthImage(MainParser):
     @classmethod
     def parse(cls, data):

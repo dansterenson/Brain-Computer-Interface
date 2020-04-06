@@ -1,10 +1,10 @@
-from Haruspex.parsers import AddParser
-from Haruspex.parsers import MainParser
+from . import add_to_parser_list
+from .main_parser import MainParser
 from PIL import Image
 import pathlib
 
 
-@AddParser.add_to_parser_list("color_image")
+@add_to_parser_list("color_image")
 class ParseColorImage(MainParser):
     @classmethod
     def parse(cls, data):

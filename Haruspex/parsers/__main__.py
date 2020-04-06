@@ -1,6 +1,6 @@
 import json
 import click
-from .add_parser import AddParser
+from . import parsers_dict
 from server.msg_queue import MessageQueue
 @click.group()
 def cli():
@@ -14,7 +14,7 @@ def parse_cmd(parser_name, path_to_data):
     #if not path.is_file(): TODO
     #    print(f'Path is invalid.')
     #    return 1
-    cur_parser = AddParser.parsers_dict[parser_name]
+    cur_parser = parsers_dict[parser_name]
     if cur_parser is None:
         return f'parser name: {parser_name} is invalid'
 
@@ -23,11 +23,12 @@ def parse_cmd(parser_name, path_to_data):
         parsed_data = cur_parser(data)
         print(parsed_data)
 
+
 @cli.command('run-parser')
 @click.argument('parser_name')
 @click.argument('message_queue_url')
 def run_parser_cmd(parser_name, message_queue_url): #TODO
-    cur_parser = AddParser.parsers_dict[parser_name]
+    cur_parser = parsers_dict[parser_name]
     if cur_parser is None:
         return f'parser name: {parser_name} is invalid'
     message_queue = MessageQueue(message_queue_url)
@@ -38,7 +39,9 @@ def run_parser_cmd(parser_name, message_queue_url): #TODO
     def callback_func(ch, method, properties, body):
         data = json.loads(body)
         parsed = cur_parser(data)
-        message_queue.queue_publish(parser_name, '', json.dumps(parsed))
+        new_exchange_name = parser_name + '_parsed'
+        message_queue.exchange_declaration(new_exchange_name)
+        message_queue.queue_publish(new_exchange_name, '', json.dumps(parsed))
 
     message_queue.consume_from_queue(parser_name, callback_func)
 

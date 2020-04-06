@@ -1,3 +1,4 @@
+matplotlib
 google
 pika
 alabaster==0.7.12

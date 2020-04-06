@@ -4,4 +4,4 @@ from .protocol import Config
 from .protocol import User
 from .protocol import Hello
 from .protocol import Snapshot
-from .load_save_data import LoadSaveData
+from .load_save_data import SaveData
