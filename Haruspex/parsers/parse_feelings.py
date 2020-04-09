@@ -9,4 +9,7 @@ class ParseFeelings(MainParser):
         user_info = cls.user_info_data(data, 'feelings')
         return {'user_info': user_info,
                 'timestamp': data['timestamp'],
-                'data:': {data['feelings']}}
+                'data': {'hunger': data['feelings'][0],
+                         'thirst': data['feelings'][1],
+                         'exhaustion': data['feelings'][2],
+                         'happiness': data['feelings'][3]}}

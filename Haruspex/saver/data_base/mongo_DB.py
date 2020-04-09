@@ -7,16 +7,18 @@ class MongoDB:
         self.db = client.db
 
     def save_user(self, data):
-        user_id = data['user_info']['user_id']
+        user_id = data['user_id']
         self.db['users'].update_one({'user_id': user_id},
                                     {'$set': data},
                                     upsert=True)
 
-    def save_snapshot(self, data):
-        user_id = data['user_info']['user_id']
-        timestamp = data['timestamp']
-        self.db['users'].update_one({'user_id': user_id, 'timestamp': timestamp},
-                                    {'$set': data})
+    def save_snapshot(self, user, timestamp, snapshot):
+        user_id = user['user_id']
+        snapshot['user_id'] = user_id
+        snapshot['timestamp'] = timestamp
+        self.db['snapshots'].update_one({'user_id': user_id, 'timestamp': timestamp},
+                                        {'$set': snapshot},
+                                        upsert=True)
 
     def get_users(self):
         self.db.get_users()

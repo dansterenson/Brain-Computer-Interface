@@ -8,20 +8,21 @@ def get_db(url):
     parsed_url = urlparse(url)
     for scheme in supported_db.keys():
         if parsed_url.scheme == scheme:
-            found_mq = supported_db[scheme]
-            return found_mq
+            found_db = supported_db[scheme]
+            return found_db
     raise ValueError(f'url is invalid: {url}')
 
 
 class DataBase:
     def __init__(self, data_base_url):
-        self.db = get_db(data_base_url)
+        db = get_db(data_base_url)
+        self.db = db(data_base_url)
 
     def save_user(self, user):
         self.db.save_user(user)
 
-    def save_snapshot(self, snapshots):
-        self.db.save_snapshot(snapshots)
+    def save_snapshot(self, user, timestamp, snapshot):
+        self.db.save_snapshot(user, timestamp, snapshot)
 
     def get_users(self):
         self.db.get_users()

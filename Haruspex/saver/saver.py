@@ -11,17 +11,9 @@ class Saver:
         data = json.loads(data_from_file)
         user = data['user_info']
         self.db.save_user(user)
-        data = data['data']
-        self.db.save_snapshot(data)
-
-
-
-        if self.db[user_id] is None:
-            self.db.save_user(data)
-
-        self.db.save_snapshot(data)
-
-
+        snapshot_data = data['data']
+        self.db.save_snapshot(user, data['timestamp'], snapshot_data)
+        x = 5
 
 
 
