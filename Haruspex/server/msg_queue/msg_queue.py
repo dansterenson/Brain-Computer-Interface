@@ -1,5 +1,5 @@
 from urllib.parse import urlparse
-from .rabbitMQ import RabbitMQ
+from .rabbit_MQ import RabbitMQ
 
 supported_mq = {'rabbitmq': RabbitMQ}
 
@@ -23,7 +23,7 @@ class MessageQueue:
         self.msg_queue.exchange_declaration(name)
 
     def queue_declaration(self, name):
-        self.msg_queue.queue_declaration(name)
+        return self.msg_queue.queue_declaration(name)
 
     def queue_publish(self, name, routing_key, message_to_publish):
         self.msg_queue.queue_publish(name, routing_key, message_to_publish)
@@ -33,6 +33,9 @@ class MessageQueue:
 
     def consume_from_queue(self, queue_name, callback):
         self.msg_queue.consume_from_queue(queue_name, callback)
+
+    def start_consuming(self):
+        self.msg_queue.start_consuming()
 
     def close(self):
         self.msg_queue.close()

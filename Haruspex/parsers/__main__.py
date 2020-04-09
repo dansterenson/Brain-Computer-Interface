@@ -44,6 +44,7 @@ def run_parser_cmd(parser_name, message_queue_url): #TODO
         message_queue.queue_publish(new_exchange_name, '', json.dumps(parsed))
 
     message_queue.consume_from_queue(parser_name, callback_func)
+    message_queue.start_consuming()
 
 
 if __name__ == '__main__':

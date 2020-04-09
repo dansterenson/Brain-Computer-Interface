@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Haruspex/saver/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/saver/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/saver/data_base/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/saver/data_base/data_base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/saver/saver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/add_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parser_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/main_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/main_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_color_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_color_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_feelings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_feelings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_pose.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_pose.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_translation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/server/server_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/server_new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/utils/load_save_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/server/msg_queue/msg_queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/msg_queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/server/msg_queue/rabbitMQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/server/msg_queue/rabbit_MQ.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -198,6 +201,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="saver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="saver" />
+      <option name="PARAMETERS" value="run-saver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python">
       <module name="Haruspex" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -227,9 +251,11 @@
       <item itemvalue="Python.parser" />
       <item itemvalue="Python.__main__" />
       <item itemvalue="Python.__main__ (2)" />
+      <item itemvalue="Python.saver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.saver" />
         <item itemvalue="Python.__main__ (2)" />
         <item itemvalue="Python.__main__" />
       </list>
@@ -253,7 +279,28 @@
       <option name="project" value="LOCAL" />
       <updated>1586126258878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed parsers">
+      <created>1586217137006</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586217137006</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed parsers">
+      <created>1586217245214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586217245214</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed parsers">
+      <created>1586217280700</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586217280700</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +318,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="new changes" />
+    <MESSAGE value="fixed parsers" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed parsers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -307,10 +355,6 @@
           <option name="timeStamp" value="344" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/__init__.py</url>
-          <option name="timeStamp" value="362" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Haruspex/parsers/parse_color_image.py</url>
           <line>10</line>
           <option name="timeStamp" value="363" />
@@ -319,6 +363,31 @@
           <url>file://$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py</url>
           <line>13</line>
           <option name="timeStamp" value="369" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="373" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/saver/__main__.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="382" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="384" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="385" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/saver/data_base/data_base.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="386" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

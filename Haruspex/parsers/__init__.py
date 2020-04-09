@@ -24,3 +24,7 @@ pwd = dirname(__file__)
 for (_, name, _) in pkgutil.iter_modules([pwd]):
     if name.startswith('parse_'):
         import_module('parsers' + '.' + name)
+
+
+def get_parser_dict():
+    return parsers_dict

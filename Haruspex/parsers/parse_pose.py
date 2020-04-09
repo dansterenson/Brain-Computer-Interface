@@ -6,4 +6,7 @@ from .main_parser import MainParser
 class ParsePose(MainParser):
     @classmethod
     def parse(cls, data):
-        return {'translation': data['translation'], 'rotation': data['rotation']}
+        user_info = cls.user_info_data(data, 'pose')
+        return {'user_info': user_info,
+                'timestamp': data['timestamp'],
+                'data': {'translation': data['translation'], 'rotation': data['rotation']}}

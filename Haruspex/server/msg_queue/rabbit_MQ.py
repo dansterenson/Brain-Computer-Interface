@@ -11,7 +11,7 @@ class RabbitMQ:
         self.channel.exchange_declare(exchange=name, exchange_type='fanout')
 
     def queue_declaration(self, name):
-        self.channel.queue_declare(queue=name, exclusive=True)
+        return self.channel.queue_declare(queue=name, exclusive=True)
 
     def queue_publish(self, name, routing_key, message_to_publish):
         self.channel.basic_publish(exchange=name, routing_key=routing_key, body=message_to_publish)
@@ -21,6 +21,8 @@ class RabbitMQ:
 
     def consume_from_queue(self, queue_name, callback):
         self.channel.basic_consume(queue=queue_name, on_message_callback=callback, auto_ack=True)
+
+    def start_consuming(self):
         self.channel.start_consuming()
 
     def close(self):
