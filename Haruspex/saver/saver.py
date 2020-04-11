@@ -12,8 +12,9 @@ class Saver:
         user = data['user_info']
         self.db.save_user(user)
         snapshot_data = data['data']
+        snapshot_data["results"] = data["results"]
         self.db.save_snapshot(user, data['timestamp'], snapshot_data)
-        x = 5
+
 
 
 

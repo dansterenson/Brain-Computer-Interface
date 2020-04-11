@@ -25,14 +25,14 @@ class DataBase:
         self.db.save_snapshot(user, timestamp, snapshot)
 
     def get_users(self):
-        self.db.get_users()
+        return self.db.get_users()
 
     def get_user(self, user_id):
-        self.db.get_user(user_id)
+        return self.db.get_user(user_id)
 
     def get_user_snapshots(self, user_id):
-        self.db.get_user_snapshots(user_id)
+        return self.db.get_user_snapshots(user_id)
 
-    def get_snapshots(self, user_id, snapshot_id):
-        self.db.get_snapshots(user_id, snapshot_id)
+    def get_snapshot_by_id(self, user_id, snapshot_id):
+        return self.db.get_snapshot_by_id(user_id, snapshot_id)
 

@@ -21,13 +21,14 @@ class MongoDB:
                                         upsert=True)
 
     def get_users(self):
-        self.db.get_users()
+        return list(self.db["users"].find({}, {'_id': 0}))
 
     def get_user(self, user_id):
-        self.db.get_user(user_id)
+        return list(self.db["users"].find({'user_id': int(user_id)}, {'_id': 0}))
 
     def get_user_snapshots(self, user_id):
-        self.db.get_user_snapshots(user_id)
+        return list(self.db["snapshots"].find({'user_id': int(user_id)}, {'_id': 0}))
 
-    def get_snapshots(self, user_id, snapshot_id):
-        self.db.get_snapshots(user_id, snapshot_id)
+    def get_snapshot_by_id(self, user_id, snapshot_id):
+        return list(self.db['snapshots'].find({"user_id": int(user_id), "timestamp": int(snapshot_id)}, {'_id': 0}))
+

@@ -16,7 +16,7 @@ class ParseColorImage(MainParser):
         image_size = (color_img_width, color_img_height)
         image = Image.frombytes('RGB', image_size, data_in_bytes)
         image.save(parsed_path)
-        user_info = cls.user_info_data(data, 'color_image')
+        user_info = cls.user_info_data(data)
         return {'user_info': user_info,
                 'timestamp': data['timestamp'],
                 'data': {'width': color_img_width,

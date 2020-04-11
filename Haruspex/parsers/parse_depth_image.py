@@ -19,7 +19,7 @@ class ParseDepthImage(MainParser):
         image_size = (depth_img_width, depth_img_height)
         image = Image.frombytes('F', image_size, data_in_bytes)
         plt.imsave(parsed_path, image, cmap=cm.Spectral)
-        user_info = cls.user_info_data(data, 'depth_image')
+        user_info = cls.user_info_data(data)
         return {'user_info': user_info,
                 'timestamp': data['timestamp'],
                 'data': {'width': depth_img_width,

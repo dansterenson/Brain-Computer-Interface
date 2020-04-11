@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Haruspex/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/api/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Haruspex/api/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/main_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/main_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_color_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_color_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_feelings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_feelings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haruspex/parsers/parse_pose.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/parsers/parse_pose.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/saver/data_base/data_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/saver/data_base/data_base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Haruspex/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/saver/saver.py" afterDir="false" />
@@ -103,6 +111,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Haruspex" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="api" />
+      <option name="PARAMETERS" value="run-server" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cli_client" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="Haruspex" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,7 +210,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="parsers" />
-      <option name="PARAMETERS" value="run-parser feelings rabbitmq://127.0.0.1:5672/" />
+      <option name="PARAMETERS" value="run-parser color_image rabbitmq://127.0.0.1:5672/" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -240,9 +269,11 @@
       <item itemvalue="Python.__main__" />
       <item itemvalue="Python.__main__ (2)" />
       <item itemvalue="Python.saver" />
+      <item itemvalue="Python.api" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.api" />
         <item itemvalue="Python.saver" />
         <item itemvalue="Python.__main__ (2)" />
         <item itemvalue="Python.__main__" />
@@ -342,44 +373,9 @@
           <option name="timeStamp" value="344" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/parse_color_image.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="363" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py</url>
           <line>13</line>
           <option name="timeStamp" value="369" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="373" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/saver/__main__.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="382" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/saver/saver.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="388" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/client/client.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="390" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="391" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/parse_feelings.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="392" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
@@ -395,6 +391,11 @@
           <url>file://$PROJECT_DIR$/Haruspex/server/server_new.py</url>
           <line>92</line>
           <option name="timeStamp" value="397" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Haruspex/client/client.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="430" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
