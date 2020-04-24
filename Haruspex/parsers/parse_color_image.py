@@ -19,6 +19,7 @@ class ParseColorImage(MainParser):
         user_info = cls.user_info_data(data)
         return {'user_info': user_info,
                 'timestamp': data['timestamp'],
+                'results': 'color_image',
                 'data': {'width': color_img_width,
                          'height': color_img_height,
                          'parsed_path': str(parsed_path)}}

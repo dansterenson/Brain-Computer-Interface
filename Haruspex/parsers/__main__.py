@@ -39,7 +39,6 @@ def run_parser_cmd(parser_name, message_queue_url): #TODO
     def callback_func(ch, method, properties, body):
         data = json.loads(body)
         parsed = cur_parser(data)
-        parsed['results'] = parser_name
         new_exchange_name = parser_name + '_parsed'
         message_queue.exchange_declaration(new_exchange_name)
         message_queue.queue_publish(new_exchange_name, '', json.dumps(parsed))

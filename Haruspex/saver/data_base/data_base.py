@@ -4,6 +4,7 @@ import pymongo
 
 supported_db = {'mongodb': MongoDB}
 
+
 def get_db(url):
     parsed_url = urlparse(url)
     for scheme in supported_db.keys():
@@ -35,4 +36,7 @@ class DataBase:
 
     def get_snapshot_by_id(self, user_id, snapshot_id):
         return self.db.get_snapshot_by_id(user_id, snapshot_id)
+
+    def get_snapshot_by_result(self, user_id, snapshot_id, result_name):
+        return self.db.get_snapshot_by_result(user_id, snapshot_id, result_name)
 

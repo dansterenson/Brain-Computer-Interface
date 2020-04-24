@@ -22,6 +22,7 @@ class ParseDepthImage(MainParser):
         user_info = cls.user_info_data(data)
         return {'user_info': user_info,
                 'timestamp': data['timestamp'],
+                'results': 'depth_image',
                 'data': {'width': depth_img_width,
                          'height': depth_img_height,
                          'parsed_path': str(parsed_path)}}

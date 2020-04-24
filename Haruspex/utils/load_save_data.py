@@ -4,7 +4,8 @@ from pathlib import Path
 class SaveData:
     def __init__(self, *args):
         path = '/'.join(str(arg) for arg in args)
-        self.dir = Path(path)
+        abs_path = str(Path().absolute())
+        self.dir = Path(abs_path + "/users/" + path)
         self.dir.mkdir(parents=True, exist_ok=True)
 
     def save_to_file(self, file_name, data, w_format='wb'):

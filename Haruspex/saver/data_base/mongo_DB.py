@@ -16,7 +16,7 @@ class MongoDB:
         user_id = user['user_id']
         snapshot['user_id'] = user_id
         snapshot['timestamp'] = timestamp
-        self.db['snapshots'].update_one({'user_id': user_id, 'timestamp': timestamp},
+        self.db['snapshots'].update_one({'user_id': user_id, 'timestamp': timestamp, 'results': snapshot['results']},
                                         {'$set': snapshot},
                                         upsert=True)
 
@@ -27,8 +27,11 @@ class MongoDB:
         return list(self.db["users"].find({'user_id': int(user_id)}, {'_id': 0}))
 
     def get_user_snapshots(self, user_id):
-        return list(self.db["snapshots"].find({'user_id': int(user_id)}, {'_id': 0}))
+        return list(self.db["snapshots"].find({'user_id': int(user_id)}))
 
     def get_snapshot_by_id(self, user_id, snapshot_id):
-        return list(self.db['snapshots'].find({"user_id": int(user_id), "timestamp": int(snapshot_id)}, {'_id': 0}))
+        return list(self.db['snapshots'].find({"user_id": int(user_id), "timestamp": int(snapshot_id)}))
+
+    def get_snapshot_by_result(self, user_id, snapshot_id, result_name):
+        return list(self.db['snapshots'].find({"user_id": int(user_id), "timestamp": int(snapshot_id), "results": result_name}))
 
