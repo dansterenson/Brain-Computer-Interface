@@ -27,7 +27,7 @@ def parse_cmd(parser_name, path_to_data):
 @cli.command('run-parser')
 @click.argument('parser_name')
 @click.argument('message_queue_url')
-def run_parser_cmd(parser_name, message_queue_url): #TODO
+def run_parser_cmd(parser_name, message_queue_url):
     cur_parser = parsers_dict[parser_name]
     if cur_parser is None:
         return f'parser name: {parser_name} is invalid'

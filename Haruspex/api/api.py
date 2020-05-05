@@ -36,16 +36,21 @@ def get_snapshots(user_id):
     for snapshot in snapshots_of_user:
         snapshot_id = snapshot['timestamp']
         snapshots_set.add(snapshot_id)
-    return jsonify([{"timestamp": timestamp} for timestamp in snapshots_set])
+    return jsonify([{"timestamp": timestamp, "datetime": timestamp} for timestamp in snapshots_set])
 
 
 @app.route('/users/<user_id>/snapshots/<snapshot_id>', methods=['GET'])
 def get_snapshot(user_id, snapshot_id):
     snapshot_list = []
+    available_results = []
+    snapshot = {}
     snapshot_data = data_base.get_snapshot_by_id(user_id, snapshot_id)
-    snapshot_list.append({'snapshot_id': snapshot_data[0]['timestamp']})
-    snapshot_list.append({'date_time': snapshot_data[0]['timestamp']})
-    snapshot_list.append({'available_results': [snapshot_res['results'] for snapshot_res in snapshot_data]})
+    snapshot['snapshot_id'] = snapshot_data[0]['timestamp']
+    snapshot['date_time'] = snapshot_data[0]['timestamp']
+    for obj in snapshot_data:
+        available_results.append(obj['parser_type'])
+    snapshot['available_results'] = available_results
+    snapshot_list.append(snapshot)
     return jsonify(snapshot_list)
 
 
@@ -53,17 +58,12 @@ def get_snapshot(user_id, snapshot_id):
 def get_snapshot_result(user_id, snapshot_id, result_name):
     snapshot_list = []
     snapshot_data = data_base.get_snapshot_by_result(user_id, snapshot_id, result_name)
-    del snapshot_data[0]["user_id"]
-    del snapshot_data[0]["_id"]
-    del snapshot_data[0]["results"]
-    del snapshot_data[0]["timestamp"]
-    snapshot_list.append(snapshot_data[0])
+    snapshot_list.append(snapshot_data[0]["parsed_data"])
     return jsonify(snapshot_list)
 
 
 @app.route('/users/<user_id>/snapshots/<snapshot_id>/<result_name>/data', methods=['GET'])
 def get_snapshot_result_data(user_id, snapshot_id, result_name):
-    snapshot_list = []
     snapshot_data = data_base.get_snapshot_by_result(user_id, snapshot_id, result_name)
-    path = snapshot_data[0]["parsed_path"]
+    path = snapshot_data[0]["parsed_data"]['parsed_path']
     return send_file(path, mimetype='image/png')

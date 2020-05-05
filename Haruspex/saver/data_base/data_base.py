@@ -22,8 +22,8 @@ class DataBase:
     def save_user(self, user):
         self.db.save_user(user)
 
-    def save_snapshot(self, user, timestamp, snapshot):
-        self.db.save_snapshot(user, timestamp, snapshot)
+    def save_snapshot(self, user, timestamp, snapshot, result_name):
+        self.db.save_snapshot(user, timestamp, snapshot, result_name)
 
     def get_users(self):
         return self.db.get_users()

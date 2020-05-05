@@ -12,26 +12,32 @@ class MongoDB:
                                     {'$set': data},
                                     upsert=True)
 
-    def save_snapshot(self, user, timestamp, snapshot):
+    def save_snapshot(self, user, timestamp, snapshot, parser_name):
         user_id = user['user_id']
-        snapshot['user_id'] = user_id
-        snapshot['timestamp'] = timestamp
-        self.db['snapshots'].update_one({'user_id': user_id, 'timestamp': timestamp, 'results': snapshot['results']},
-                                        {'$set': snapshot},
+        self.db['snapshots'].insert({'user_id': user_id, 'timestamp': timestamp, 'parser_type': parser_name})
+
+        self.db['snapshots'].update_one({'user_id': user_id, 'timestamp': timestamp, 'parser_type': parser_name},
+                                        {'$set': {"parsed_data": snapshot}},
                                         upsert=True)
 
     def get_users(self):
         return list(self.db["users"].find({}, {'_id': 0}))
 
     def get_user(self, user_id):
-        return list(self.db["users"].find({'user_id': int(user_id)}, {'_id': 0}))
+        return list(self.db["users"].find({'user_id': int(user_id)},
+                                          {'_id': 0}))
 
     def get_user_snapshots(self, user_id):
-        return list(self.db["snapshots"].find({'user_id': int(user_id)}))
+        return list(self.db["snapshots"].find({'user_id': int(user_id)},
+                                              {'_id': 0}))
 
     def get_snapshot_by_id(self, user_id, snapshot_id):
-        return list(self.db['snapshots'].find({"user_id": int(user_id), "timestamp": int(snapshot_id)}))
+        return list(self.db['snapshots'].find({"user_id": int(user_id),
+                                               "timestamp": int(snapshot_id)},
+                                              {'_id': 0}))
 
     def get_snapshot_by_result(self, user_id, snapshot_id, result_name):
-        return list(self.db['snapshots'].find({"user_id": int(user_id), "timestamp": int(snapshot_id), "results": result_name}))
-
+        return list(self.db['snapshots'].find({"user_id": int(user_id),
+                                               "timestamp": int(snapshot_id),
+                                               "parser_type": result_name},
+                                              {'_id': 0}))
