@@ -1,0 +1,91 @@
+.models-container {
+  width: 100%;
+  height: 100%;
+}
+.models-container .models-header {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  background: #affff1;
+  z-index: 1000000000;
+}
+.models-container .models-header .models-logo {
+  height: 80px;
+  z-index: 1000;
+  margin-right: 10px;
+}
+.models-container .models-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  padding-top: 20px;
+}
+.models-container .models-content .table-header {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.models-container .models-content .add-model {
+  margin: 10px 0px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  font-size: 20px;
+}
+.models-container .models-content .run-model {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+.models-container .models-content .ReactTable {
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+.models-container .models-content .ReactTable .rt-thead {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: rgba(156, 255, 70, 0.68);
+}
+.models-container .models-content .ReactTable .rt-th {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.models-container .models-content .ReactTable .rt-th:focus {
+  outline: none;
+}
+.models-container .models-content .ReactTable .rt-tr.-odd {
+  background: white;
+}
+.models-container .models-content .ReactTable .rt-tr.-even {
+  background: #eef9e9;
+}
+.models-container .models-content .ReactTable .rt-tr .rt-td {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.run-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=models.css.map */

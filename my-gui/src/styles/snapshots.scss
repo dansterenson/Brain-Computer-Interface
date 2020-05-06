@@ -1,0 +1,58 @@
+.page-header {
+  font-size: 200%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+}
+
+.ReactTable {
+  width: 60%;
+  margin: 5px 257px;
+  border-radius: 10px;
+
+  .rt-thead {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: rgb(98, 158, 187);
+  }
+
+  .rt-th {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .rt-tr {
+    &.-odd {
+      background: white;
+      color: black;
+    }
+
+    &.-even {
+      background: rgb(167, 199, 214);
+      color: black;
+    }
+
+    .rt-td {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+body
+{
+  background-color: rgb(254, 174, 71); /* The page background will be black */
+  color: white; /* The page text will be white */
+}

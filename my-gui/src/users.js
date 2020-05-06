@@ -1,32 +1,61 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
 import {Link} from 'react-router-dom'
+import{ Component } from 'react';
+import 'react-table-v6/react-table.css'
+import ReactTable from "react-table-v6";
+import { useHistory } from "react-router-dom";
 
-function Users() {
-    useEffect(() => {
-        fetchItems();
-    },[]);
 
-    const [items, setItems] = useState([]);
+class Users extends Component{
 
-    const fetchItems = async () => {
-        const data = await fetch("http://127.0.0.1:5000/users");
+    constructor(props) {
+        super(props);
+        this.state={}
+    }
 
-        const items = await data.json();
-        //console.log(items);
-        setItems(items);
+    async componentDidMount() {
+        await this.fetchItems();
+    }
+
+    fetchItems = async () => {
+        const {match} = this.props;
+        const fetchItem = await fetch(
+            `http://127.0.0.1:5000/users`);
+        const items = await fetchItem.json();
+        this.setState({items})
+        console.log({items})
+
     };
 
-    return (
-        <div>
-            <h1>Users List</h1>
-            {items.map(item => (
-                <h3 key={item.user_id}>{item.user_name}:
-                    <Link to={`/users/${item.user_id}`}> {item.user_id}</Link>
-                </h3>
-            ))}
-        </div>
-    );
+
+
+    render()
+    {
+        const {items}  = this.state;
+        const {match} = this.props;
+        const columns = [{
+            Header: 'User Id',
+            accessor: 'user_id', // String-based value accessors!
+            Cell: props => <a href={`http://127.0.0.1:3000/users/${props.original.user_id}/`}>{props.original.user_id}</a>
+        }, {
+            Header: 'User Name',
+            accessor: 'user_name',
+        }
+        ]
+
+        return (
+
+            <div className={"table-header"}>
+                <h1>Users</h1>
+                {<ReactTable
+                    data={items}
+                    columns={columns}
+                    defaultPageSize={5}
+                />}
+            </div>
+        );
+    }
 }
 
 export default Users;
