@@ -5,6 +5,7 @@ import{ Component } from 'react';
 import 'react-table-v6/react-table.css'
 import ReactTable from "react-table-v6";
 import { useHistory } from "react-router-dom";
+import Moment from 'react-moment';
 
 
 
@@ -39,13 +40,14 @@ class Snapshot extends Component{
             accessor: 'snapshot_id', // String-based value accessors!
         }, {
             Header: 'Snapshot Date-Time',
-            accessor: 'date_time',
+            Cell: props => <td><Moment format="MMMM Do, h:mm:ss a" unix>{props.original.date_time}</Moment></td>
         }, {
             Header: 'Available Results',
             accessor: 'available_results',
-            Cell: props => props.original.available_results.map(item=><li key={item}>
-                <Link to={`/users/${match.params.id}/snapshots/${match.params.snapshot}/${item}`}> {item}</Link>
-            </li>)
+            Cell: props => <div className={"array"}>{
+                props.original.available_results.map((item)=>
+                <Link className={"navStyle"} to={`/users/${match.params.id}/snapshots/${match.params.snapshot}/${item}`}>{item}</Link>)}
+            </div>
         },
         ]
         return (

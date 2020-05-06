@@ -5,6 +5,8 @@ import{ Component } from 'react';
 import 'react-table-v6/react-table.css'
 import ReactTable from "react-table-v6";
 import { useHistory } from "react-router-dom";
+import Moment from 'react-moment';
+
 
 
 class User extends Component{
@@ -42,13 +44,13 @@ class User extends Component{
             accessor: 'user_name',
         }, {
             Header: 'User Birthday',
-            accessor: 'birthday',
+            Cell: props => <td><Moment format="MMMM Do YYYY" unix>{props.original.birthday}</Moment></td>
         }, {
             Header: 'User Gender',
             accessor: 'gender',
         }, {
             Header: 'snapshots',
-            Cell: props => <a href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/`}>Watch Snapshots</a>
+            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/`}>Watch Snapshots</a>
         }
 
 
@@ -57,7 +59,7 @@ class User extends Component{
         return (
 
             <div className={"table-header"}>
-                <h1>User details</h1>
+                <h1>User Details</h1>
                 {<ReactTable
                     data={items}
                     columns={columns}

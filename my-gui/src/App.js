@@ -13,7 +13,7 @@ import Pose from "./pose"
 import ColorImageData from "./color_image_data";
 
 
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 
 function App() {
   return (
@@ -40,7 +40,7 @@ function App() {
 
 const Home = () => (
     <div>
-        <h1>Home Page</h1>
+        <Link className={"home-page"} to={`/users`}>Start</Link>
     </div>
 );
 

@@ -3,8 +3,6 @@ import './App.css';
 import {Link} from 'react-router-dom'
 import{ Component } from 'react';
 import ReactTable from "react-table-v6";
-import './styles/snapshots.css';
-
 
 
 class ColorImage extends Component{
@@ -27,6 +25,10 @@ class ColorImage extends Component{
 
     };
 
+    onButtonClickHandler = param => e => {
+        window.alert(param);
+    };
+
     render() {
         const {items}  = this.state;
         const {match} = this.props
@@ -43,9 +45,12 @@ class ColorImage extends Component{
         }, {
             Header: 'Image Path',
             accessor: 'parsed_path',
+            Cell: props => <div className={"navStyle"}>
+                <button onClick={this.onButtonClickHandler(props.original.parsed_path)}>view file path</button>
+            </div>
         }, {
             Header: 'Image',
-            Cell: props => <a href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/${match.params.snapshot}/color_image/data`}>View Image</a>
+            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/${match.params.snapshot}/color_image/data`}>View Image</a>
         },
         ]
         return (

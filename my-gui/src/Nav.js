@@ -1,25 +1,39 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom'
-function Nav() {
+import home_button from './icons/home_icon.png'
+import './styles/snapshots.scss';
+import{ Component } from 'react';
 
-    const navStyle = {
-        color: '#F0E2C8'
-    };
+class Nav extends Component {
 
-    return (
-        <nav>
-            <h3>Logo</h3>
-            <ul className="nav-links">
-                <Link style={navStyle} to='/about'>
-                    <li>About</li>
-                </Link>
-                <Link style={navStyle} to="/users">
-                    <li>Users</li>
-                </Link>
-            </ul>
-        </nav>
-    );
+    constructor(props) {
+        super(props);
+        this.state={}
+    }
+
+    async componentDidMount() {
+    }
+
+    render() {
+        return (
+            <nav>
+                <a href='http://127.0.0.1:3000/'>
+                <img
+                    style={{ width: 30, height: 30}}
+                    src={home_button}/>
+                </a>
+                    <ul className="nav-links">
+                        <Link className="top_bar_links" to='/about'>
+                            <li>About</li>
+                        </Link>
+                        <Link className="top_bar_links" to="/users">
+                            <li>Users</li>
+                        </Link>
+                    </ul>
+            </nav>
+        )
+    }
 }
 
 export default Nav;

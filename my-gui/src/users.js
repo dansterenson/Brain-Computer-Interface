@@ -5,6 +5,7 @@ import{ Component } from 'react';
 import 'react-table-v6/react-table.css'
 import ReactTable from "react-table-v6";
 import { useHistory } from "react-router-dom";
+import './styles/snapshots.scss';
 
 
 class Users extends Component{
@@ -37,7 +38,7 @@ class Users extends Component{
         const columns = [{
             Header: 'User Id',
             accessor: 'user_id', // String-based value accessors!
-            Cell: props => <a href={`http://127.0.0.1:3000/users/${props.original.user_id}/`}>{props.original.user_id}</a>
+            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${props.original.user_id}/`}>{props.original.user_id}</a>
         }, {
             Header: 'User Name',
             accessor: 'user_name',

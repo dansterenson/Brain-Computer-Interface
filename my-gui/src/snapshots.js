@@ -6,6 +6,7 @@ import 'react-table-v6/react-table.css'
 import ReactTable from "react-table-v6";
 import { useHistory } from "react-router-dom";
 import './styles/snapshots.scss';
+import Moment from 'react-moment';
 
 
 class Snapshots extends Component{
@@ -31,16 +32,16 @@ class Snapshots extends Component{
 
     render()
     {
-
         const {items}  = this.state;
         const {match} = this.props;
         const columns = [{
             Header: 'Snapshot Id',
             accessor: 'timestamp', // String-based value accessors!
-            Cell: props => <a href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/${props.original.timestamp}`}>{props.original.timestamp}</a>
+            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/${props.original.timestamp}`}>{props.original.timestamp}</a>
         }, {
             Header: 'Snapshot Date-Time',
             accessor: 'datetime',
+            Cell: props => <td><Moment format="MMMM Do, h:mm:ss a" unix>{props.original.datetime}</Moment></td>
         }
         ]
 
@@ -50,7 +51,7 @@ class Snapshots extends Component{
                 {<ReactTable
                     showPageSizeOptions={true}
                     pageSizeOptions={[10, 20, 50, 100]}
-                    defaultPageSize={10}
+                    defaultPageSize={7}
                     defaultResized={[23]}
                     data={items}
                     columns={columns}

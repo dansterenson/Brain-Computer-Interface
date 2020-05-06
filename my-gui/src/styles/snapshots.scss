@@ -1,3 +1,15 @@
+.home-page {
+
+  font-size: 400%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  color: rgb(253, 79, 42);
+}
+
 .page-header {
   font-size: 200%;
   align-items: center;
@@ -14,7 +26,7 @@
   .rt-thead {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background: rgb(98, 158, 187);
+    background: rgb(254, 160, 39);
   }
 
   .rt-th {
@@ -31,17 +43,8 @@
   }
 
   .rt-tr {
-    &.-odd {
-      background: white;
-      color: black;
-    }
-
-    &.-even {
-      background: rgb(167, 199, 214);
-      color: black;
-    }
-
     .rt-td {
+      background: white;
       height: 50px;
       display: flex;
       align-items: center;
@@ -50,9 +53,23 @@
   }
 }
 
+.navStyle {
+  color: rgb(98, 158, 187);
+  list-style-type: circle
+}
+
+.top_bar_links {
+  color: rgb(240, 226, 200);
+}
+
+.array {
+  color: rgb(98, 158, 187);
+  display: flex;
+  flex-direction: column;
+}
 
 body
 {
-  background-color: rgb(254, 174, 71); /* The page background will be black */
-  color: white; /* The page text will be white */
+  background-color: rgb(240, 226, 200);; /* The page background will be black */
+  color: black; /* The page text will be white */
 }
