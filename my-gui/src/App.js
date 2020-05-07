@@ -11,7 +11,9 @@ import ColorImage from "./color_image"
 import DepthImage from "./depth_image"
 import Pose from "./pose"
 import ColorImageData from "./color_image_data";
-
+import Animate from 'animate.css-react'
+import './styles/animate.css'
+import Home from './home'
 
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 
@@ -38,10 +40,11 @@ function App() {
   );
 }
 
-const Home = () => (
-    <div>
-        <Link className={"home-page"} to={`/users`}>Start</Link>
-    </div>
-);
+//const Home = () => (
+//    <div>
+//        <Link className={"home-page"} onClick={() => this.setState({ fade: true })}
+//              to={`/users`}>Start</Link>
+//    </div>
+//);
 
 export default App;

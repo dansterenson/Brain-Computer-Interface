@@ -47,8 +47,8 @@ class Snapshots extends Component{
 
         return (
             <div>
-                <h1 className={"page-header"}>Sanpshots</h1>
-                {<ReactTable
+                <h1 className={"page-header table-header animated fadeInLeft "}>Snapshots</h1>
+                {<ReactTable className={"ReactTable animated fadeInLeft "}
                     showPageSizeOptions={true}
                     pageSizeOptions={[10, 20, 50, 100]}
                     defaultPageSize={7}

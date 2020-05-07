@@ -58,12 +58,13 @@ class User extends Component{
 
         return (
 
-            <div className={"table-header"}>
+            <div className={"table-header "}>
                 <h1>User Details</h1>
                 {<ReactTable
                     data={items}
                     columns={columns}
                     defaultPageSize={5}
+                    minRows={0}
                 />}
             </div>
         );

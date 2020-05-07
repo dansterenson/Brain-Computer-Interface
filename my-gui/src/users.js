@@ -6,6 +6,7 @@ import 'react-table-v6/react-table.css'
 import ReactTable from "react-table-v6";
 import { useHistory } from "react-router-dom";
 import './styles/snapshots.scss';
+import $ from "jquery";
 
 
 class Users extends Component{
@@ -17,6 +18,7 @@ class Users extends Component{
 
     async componentDidMount() {
         await this.fetchItems();
+
     }
 
     fetchItems = async () => {
@@ -38,7 +40,7 @@ class Users extends Component{
         const columns = [{
             Header: 'User Id',
             accessor: 'user_id', // String-based value accessors!
-            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${props.original.user_id}/`}>{props.original.user_id}</a>
+            Cell: props => <a className={"navStyle"} onClick={"handleClick"} href={`http://127.0.0.1:3000/users/${props.original.user_id}/`}>{props.original.user_id}</a>
         }, {
             Header: 'User Name',
             accessor: 'user_name',
@@ -47,12 +49,13 @@ class Users extends Component{
 
         return (
 
-            <div className={"table-header"}>
-                <h1>Users</h1>
+            <div className={"table-header animated fadeInLeft"}>
+                <h1 >Users</h1>
                 {<ReactTable
                     data={items}
                     columns={columns}
                     defaultPageSize={5}
+                    minRows={0}
                 />}
             </div>
         );
