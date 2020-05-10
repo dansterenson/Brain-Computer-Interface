@@ -57,6 +57,7 @@ class ColorImage extends Component{
             <div className={"table-header"}>
                 <h1>Color Image</h1>
                 {<ReactTable
+                    showPagination={false}
                     data={items}
                     columns={columns}
                     defaultPageSize={1}

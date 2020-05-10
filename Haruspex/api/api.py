@@ -26,7 +26,8 @@ def get_users():
 @app.route('/users/<user_id>', methods=['GET'])
 def get_user(user_id):
     user = data_base.get_user(user_id)
-    return jsonify(user)
+    feelings = data_base.get_user_feelings(user_id)
+    return jsonify({'user': user, 'feelings': feelings})
 
 
 @app.route('/users/<user_id>/snapshots', methods=['GET'])
@@ -67,3 +68,4 @@ def get_snapshot_result_data(user_id, snapshot_id, result_name):
     snapshot_data = data_base.get_snapshot_by_result(user_id, snapshot_id, result_name)
     path = snapshot_data[0]["parsed_data"]['parsed_path']
     return send_file(path, mimetype='image/png')
+

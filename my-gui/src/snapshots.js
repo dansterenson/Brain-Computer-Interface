@@ -52,6 +52,11 @@ class Snapshots extends Component{
                     showPageSizeOptions={true}
                     pageSizeOptions={[10, 20, 50, 100]}
                     defaultPageSize={7}
+                    defaultSortDesc={true}
+                    defaultSorted={[{ // the sorting model for the table
+                        id: 'datetime',
+                        desc: false
+                    }]}
                     defaultResized={[23]}
                     data={items}
                     columns={columns}

@@ -41,3 +41,10 @@ class MongoDB:
                                                "timestamp": int(snapshot_id),
                                                "parser_type": result_name},
                                               {'_id': 0}))
+
+    def get_user_feelings(self, user_id):
+        res_list = []
+        snapshots = self.db['snapshots'].find({"user_id": 42, "parser_type": "feelings"})
+        for snap in snapshots:
+            res_list.append({'timestamp': snap['timestamp'], 'feelings_at_timestamp': snap['parsed_data']})
+        return res_list

@@ -57,6 +57,7 @@ class Snapshot extends Component{
                     data={items}
                     columns={columns}
                     defaultPageSize={1}
+                    showPagination={false}
                 />}
             </div>
         );

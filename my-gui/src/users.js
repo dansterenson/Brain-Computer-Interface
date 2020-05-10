@@ -50,7 +50,7 @@ class Users extends Component{
         return (
 
             <div className={"table-header animated fadeInLeft"}>
-                <h1 >Users</h1>
+                <h1 className={"titles"}>Users</h1>
                 {<ReactTable
                     data={items}
                     columns={columns}

@@ -2,16 +2,18 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import {Link} from 'react-router-dom'
 import{ Component } from 'react';
-
+import Chart from "./chart"
 
 class Feelings extends Component{
 
-    constructor(props) {
-        super(props);
-        this.state={}
+    constructor() {
+        super();
+        this.state= {
+            chartData: []
+        }
     }
 
-    async componentDidMount() {
+    componentWillMount = async () => {
         await this.fetchItems();
     }
 
@@ -20,26 +22,34 @@ class Feelings extends Component{
         const fetchItem = await fetch(
             `http://127.0.0.1:5000/users/${match.params.id}/snapshots/${match.params.snapshot}/feelings`);
         const items = await fetchItem.json();
-        this.setState({items})
-
+        const labels = Object.keys(items[0])
+        const chartData = {
+                labels: ["Exhaustion", "Happiness", "Hunger", "Thirst"],
+                datasets: [
+                    {
+                        label: '',
+                        data: Object.values(items[0]),
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)',
+                            'rgba(153, 102, 255, 0.6)',
+                            'rgba(255, 159, 64, 0.6)',
+                            'rgba(255, 99, 132, 0.6)'
+                        ]
+                    }
+                ]
+            }
+        this.setState({chartData})
     };
 
+
     render() {
-        const {items}  = this.state;
-        const {match} = this.props
-        if (!items)
-            return  null;
         return (
             <div>
                 <h1>Feelings</h1>
-                {items.map(item => (
-                    <h3 key={item.snapshot_id}>
-                        Exaustion: {item.exhaustion} <br></br>
-                        Happiness: {item.happiness} <br></br>
-                        Hunger: {item.hunger} <br></br>
-                        Thirst: {item.thirst} <br></br>
-                    </h3>
-                ))}
+                <Chart chartData={this.state.chartData}/>
             </div>
         );
     }

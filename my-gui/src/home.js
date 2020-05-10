@@ -21,7 +21,7 @@ class Home extends Component{
             $(this).addClass(effects).one(effectsEnd, function () {
                 $(this).removeClass(effects);
             });
-            setTimeout(function(){document.location.href="http://127.0.0.1:3000/users";}, 700);
+            setTimeout(function(){document.location.href="http://127.0.0.1:3000/users";}, 770);
         });
     }
 

@@ -40,3 +40,6 @@ class DataBase:
     def get_snapshot_by_result(self, user_id, snapshot_id, result_name):
         return self.db.get_snapshot_by_result(user_id, snapshot_id, result_name)
 
+    def get_user_feelings(self, user_id):
+        return self.db.get_user_feelings(user_id)
+
