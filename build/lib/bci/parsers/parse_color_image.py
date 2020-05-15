@@ -1,5 +1,5 @@
-from Haruspex.parsers import AddParser
-from Haruspex.parsers import MainParser
+from Noesis.parsers import AddParser
+from Noesis.parsers import MainParser
 from PIL import Image
 
 

@@ -3,8 +3,8 @@ import time
 
 import pytest
 
-from Haruspex.utils import Connection
-from Haruspex.utils import Listener
+from Noesis.utils import Connection
+from Noesis.utils import Listener
 
 
 

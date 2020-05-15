@@ -3,10 +3,10 @@ import time
 
 import pytest
 
-from Haruspex.utils import Listener
-from Haruspex.utils.protoco1l import Hello
-from Haruspex.utils import Connection
-from Haruspex.utils.protoco1l import User
+from Noesis.utils import Listener
+from Noesis.utils.protoco1l import Hello
+from Noesis.utils import Connection
+from Noesis.utils.protoco1l import User
 
 _PORT = 1234
 _HOST = '127.0.0.1'

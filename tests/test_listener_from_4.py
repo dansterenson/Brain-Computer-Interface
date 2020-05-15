@@ -3,7 +3,7 @@ import time
 
 import pytest
 
-from Haruspex.utils import Listener
+from Noesis.utils import Listener
 
 
 _PORT = 1234

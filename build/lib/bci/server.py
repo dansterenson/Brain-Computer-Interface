@@ -3,12 +3,12 @@ import socket
 import struct
 import threading
 from pathlib import Path
-from Haruspex.utils import Listener
-from Haruspex.utils import Hello
-from Haruspex.utils import Config
-from Haruspex.utils import Snapshot
-from Haruspex.parsers import AddParser
-from Haruspex.parsers import MainParser
+from Noesis.utils import Listener
+from Noesis.utils import Hello
+from Noesis.utils import Config
+from Noesis.utils import Snapshot
+from Noesis.parsers import AddParser
+from Noesis.parsers import MainParser
 
 
 
