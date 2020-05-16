@@ -45,7 +45,7 @@ def run_save_cmd(database, mq_url):
     supported_parsers = parser_mng.supported_parsers
 
     def callback(ch, method, properties, body):
-        data = json.load(body)
+        data = json.loads(body)
         topic_name = data['result_name']
         saver.save(topic_name, data)
 

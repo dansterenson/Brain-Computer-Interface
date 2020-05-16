@@ -48,6 +48,6 @@ class DataBase:
         for scheme in self.supported_db.keys():
             if parsed_url.scheme == scheme:
                 found_db = self.supported_db[scheme]
-                return found_db
+                return found_db(url)
         raise ValueError(f'url is invalid: {url}')
 

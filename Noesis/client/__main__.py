@@ -1,5 +1,6 @@
 import click
 import sys
+import logging
 from .client import upload_sample
 
 

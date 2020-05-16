@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, send_file
-from Noesis.data_base import DataBase
+from ..data_base import DataBase
 from flask_cors import CORS
 app = Flask(__name__)
 cors = CORS(app)

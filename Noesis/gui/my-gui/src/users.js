@@ -40,7 +40,7 @@ class Users extends Component{
         const columns = [{
             Header: 'User Id',
             accessor: 'user_id', // String-based value accessors!
-            Cell: props => <a className={"navStyle"} onClick={"handleClick"} href={`http://127.0.0.1:3000/users/${props.original.user_id}/`}>{props.original.user_id}</a>
+            Cell: props => <a className={"navStyle"} onClick={"handleClick"} href={`/users/${props.original.user_id}/`}>{props.original.user_id}</a>
         }, {
             Header: 'User Name',
             accessor: 'user_name',

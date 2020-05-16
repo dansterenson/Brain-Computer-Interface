@@ -50,7 +50,7 @@ class ColorImage extends Component{
             </div>
         }, {
             Header: 'Image',
-            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/${match.params.snapshot}/color_image/data`}>View Image</a>
+            Cell: props => <a className={"navStyle"} href={`/users/${match.params.id}/snapshots/${match.params.snapshot}/color_image/data`}>View Image</a>
         },
         ]
         return (

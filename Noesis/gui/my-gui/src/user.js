@@ -93,7 +93,7 @@ class User extends Component{
             accessor: 'gender',
         }, {
             Header: 'snapshots',
-            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/`}>View Snapshots</a>
+            Cell: props => <a className={"navStyle"} href={`/users/${match.params.id}/snapshots/`}>View Snapshots</a>
         }
         ]
 

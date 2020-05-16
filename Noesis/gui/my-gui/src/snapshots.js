@@ -37,7 +37,7 @@ class Snapshots extends Component{
         const columns = [{
             Header: 'Snapshot Id',
             accessor: 'timestamp', // String-based value accessors!
-            Cell: props => <a className={"navStyle"} href={`http://127.0.0.1:3000/users/${match.params.id}/snapshots/${props.original.timestamp}`}>{props.original.timestamp}</a>
+            Cell: props => <a className={"navStyle"} href={`/users/${match.params.id}/snapshots/${props.original.timestamp}`}>{props.original.timestamp}</a>
         }, {
             Header: 'Snapshot Date-Time',
             accessor: 'datetime',
