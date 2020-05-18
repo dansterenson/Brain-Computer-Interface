@@ -18,7 +18,7 @@ class Nav extends Component {
     render() {
         return (
             <nav>
-                <a href='http://127.0.0.1:3000/'>
+                <a href='/'>
                 <img
                     style={{ width: 30, height: 30}}
                     src={home_button}/>

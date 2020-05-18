@@ -3,6 +3,7 @@ import './App.css';
 import {Link} from 'react-router-dom'
 import{ Component } from 'react';
 import Chart from "./chart"
+import {getSnapshotResult} from "./connect_api";
 
 class Feelings extends Component{
 
@@ -19,9 +20,7 @@ class Feelings extends Component{
 
     fetchItems = async () => {
         const {match} = this.props;
-        const fetchItem = await fetch(
-            `http://127.0.0.1:5000/users/${match.params.id}/snapshots/${match.params.snapshot}/feelings`);
-        const items = await fetchItem.json();
+        const items = await getSnapshotResult(match.params.id, match.params.snapshot, "feelings")
         const labels = Object.keys(items[0])
         const chartData = {
                 labels: ["Exhaustion", "Happiness", "Hunger", "Thirst"],

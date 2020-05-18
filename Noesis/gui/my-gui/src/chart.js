@@ -35,7 +35,7 @@ class Chart extends Component {
                                 display:this.props.displayLegend,
                                 position:'right'
                             },
-                            responsive: false,
+                            responsive: true,
                             maintainAspectRatio: false,
                         }}
                     />

@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import Moment from 'react-moment';
 import Chart from "./chart";
 import OverTimeChart from "./over_time_feelings";
+import {getUser} from "./connect_api";
 
 
 
@@ -24,9 +25,7 @@ class User extends Component{
 
     fetchItems = async () => {
         const {match} = this.props;
-        const fetchItem = await fetch(
-            `http://127.0.0.1:5000/users/${match.params.id}`);
-        const items = await fetchItem.json();
+        const items = await getUser(match.params.id)
         this.setState({user: items.user})
         console.log(items)
         const exhaustion = Object.keys(items.feelings).map(m => (items.feelings[m].feelings_at_timestamp.exhaustion));
@@ -43,7 +42,9 @@ class User extends Component{
                     data: hunger,
                     backgroundColor: [
                         'rgba(75, 192, 192, 0.6)',
-                    ]
+                    ],
+                    borderWidth: 1,
+                    pointRadius: 0
                 },
                 {
                     label: 'Exhaustion',
@@ -51,13 +52,17 @@ class User extends Component{
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.6)',
                     ],
+                    borderWidth: 1,
+                    pointRadius: 0
                 },
                 {
                     label: 'Happiness',
                     data: happiness,
                     backgroundColor: [
                         'rgba(255, 206, 86, 0.6)',
-                    ]
+                    ],
+                    borderWidth: 1,
+                    pointRadius: 0
                 },
 
                 {
@@ -65,7 +70,9 @@ class User extends Component{
                     data: thirst,
                     backgroundColor: [
                         'rgba(255, 159, 64, 0.6)',
-                    ]
+                    ],
+                    borderWidth: 1,
+                    pointRadius: 0
                 }
 
             ]

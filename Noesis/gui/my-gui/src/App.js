@@ -10,8 +10,6 @@ import Feelings from "./feelings"
 import ColorImage from "./color_image"
 import DepthImage from "./depth_image"
 import Pose from "./pose"
-import ColorImageData from "./color_image_data";
-import Animate from 'animate.css-react'
 import './styles/animate.css'
 import Home from './home'
 
@@ -30,10 +28,9 @@ function App() {
               <Route path="/users/:id/snapshots" exact component={Snapshots}/>
               <Route path="/users/:id/snapshots/:snapshot" exact component={Snapshot}/>
               <Route path="/users/:id/snapshots/:snapshot/feelings" component={Feelings}/>
-              <Route path="/users/:id/snapshots/:snapshot/depth_image" component={DepthImage}/>
               <Route path="/users/:id/snapshots/:snapshot/pose" component={Pose}/>
               <Route path="/users/:id/snapshots/:snapshot/color_image" exact component={ColorImage}/>
-              <Route path="/users/:id/snapshots/:snapshot/color_image/data" component={ColorImageData}/>
+              <Route path="/users/:id/snapshots/:snapshot/depth_image" exact component={DepthImage}/>
               </Switch>
           </div>
       </Router>

@@ -2,7 +2,9 @@ import click
 import sys
 from .server import run_server
 from ..msg_queue import MessageQueue
+#import logging
 
+#logging.basicConfig(filename='./log_files/server.log', level=logging.DEBUG, format='%(asctime)s:%(levelname)s:%(message)s')
 
 @click.group()
 def cli():
@@ -20,6 +22,7 @@ def run_server_cmd(host, port, mq_url):
         mq = MessageQueue(mq_url)
         mq.exchange_declaration('snapshots')
         mq.queue_publish('snapshots', '', message_to_publish)
+        #logging.debug('Message queue published snapshot to "snapshots" exchange')
         mq.close()
 
     try:

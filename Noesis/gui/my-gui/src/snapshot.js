@@ -6,6 +6,7 @@ import 'react-table-v6/react-table.css'
 import ReactTable from "react-table-v6";
 import { useHistory } from "react-router-dom";
 import Moment from 'react-moment';
+import {getSnapshot} from "./connect_api";
 
 
 
@@ -22,9 +23,7 @@ class Snapshot extends Component{
 
     fetchItems = async () => {
         const {match} = this.props;
-        const fetchItem = await fetch(
-            `http://127.0.0.1:5000/users/${match.params.id}/snapshots/${match.params.snapshot}`);
-        const items = await fetchItem.json();
+        const items = await getSnapshot(match.params.id, match.params.snapshot)
         this.setState({items})
     };
 
@@ -50,6 +49,7 @@ class Snapshot extends Component{
             </div>
         },
         ]
+
         return (
             <div className={"table-header"}>
                 <h1>Snapshot Details</h1>
@@ -58,7 +58,7 @@ class Snapshot extends Component{
                     columns={columns}
                     defaultPageSize={1}
                     showPagination={false}
-                />}
+                    />}
             </div>
         );
     }

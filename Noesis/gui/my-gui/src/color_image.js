@@ -2,8 +2,10 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import {Link} from 'react-router-dom'
 import{ Component } from 'react';
+import './styles/snapshots.scss';
+import {getSnapshotResult, getSnapshotResultDataUrl} from "./connect_api";
 import ReactTable from "react-table-v6";
-
+import $ from "jquery";
 
 class ColorImage extends Component{
 
@@ -14,25 +16,27 @@ class ColorImage extends Component{
 
     async componentDidMount() {
         await this.fetchItems();
+        await this.fetchData()
     }
 
     fetchItems = async () => {
         const {match} = this.props;
-        const fetchItem = await fetch(
-            `http://127.0.0.1:5000/users/${match.params.id}/snapshots/${match.params.snapshot}/color_image`);
-        const items = await fetchItem.json();
+        const items = await getSnapshotResult(match.params.id, match.params.snapshot, "color_image")
+        const image_src = await getSnapshotResultDataUrl(match.params.id, match.params.snapshot, 'color_image')
         this.setState({items})
-
+        this.setState({image_src})
     };
 
     onButtonClickHandler = param => e => {
         window.alert(param);
     };
 
+
     render() {
-        const {items}  = this.state;
         const {match} = this.props
-        console.log({match})
+        const {items}  = this.state;
+        const {image_src} = this.state;
+
         if (!items)
             return  null;
 
@@ -48,11 +52,9 @@ class ColorImage extends Component{
             Cell: props => <div className={"navStyle"}>
                 <button onClick={this.onButtonClickHandler(props.original.parsed_path)}>view file path</button>
             </div>
-        }, {
-            Header: 'Image',
-            Cell: props => <a className={"navStyle"} href={`/users/${match.params.id}/snapshots/${match.params.snapshot}/color_image/data`}>View Image</a>
         },
         ]
+
         return (
             <div className={"table-header"}>
                 <h1>Color Image</h1>
@@ -62,9 +64,16 @@ class ColorImage extends Component{
                     columns={columns}
                     defaultPageSize={1}
                 />}
+                <view>
+                    <img className={"animated fadeIn color-image"} src={image_src}
+                         resizeMode='contain'
+                         style={{maxHeight: 480, maxWidth: 640}}
+                    />
+                </view>
             </div>
         );
     }
 }
+
 
 export default ColorImage;

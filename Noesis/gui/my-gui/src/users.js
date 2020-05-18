@@ -7,6 +7,7 @@ import ReactTable from "react-table-v6";
 import { useHistory } from "react-router-dom";
 import './styles/snapshots.scss';
 import $ from "jquery";
+import {getUsers} from "./connect_api";
 
 
 class Users extends Component{
@@ -23,11 +24,9 @@ class Users extends Component{
 
     fetchItems = async () => {
         const {match} = this.props;
-        const fetchItem = await fetch(
-            `http://127.0.0.1:5000/users`);
-        const items = await fetchItem.json();
+        console.log(getUsers())
+        const items = await getUsers();
         this.setState({items})
-        console.log({items})
 
     };
 
@@ -37,10 +36,12 @@ class Users extends Component{
     {
         const {items}  = this.state;
         const {match} = this.props;
+
         const columns = [{
             Header: 'User Id',
             accessor: 'user_id', // String-based value accessors!
-            Cell: props => <a className={"navStyle"} onClick={"handleClick"} href={`/users/${props.original.user_id}/`}>{props.original.user_id}</a>
+
+            Cell: props => <a className={"navStyle"} onClick={"handleClick"} href={`/users/${props.original.user_id}`}>{props.original.user_id}</a>
         }, {
             Header: 'User Name',
             accessor: 'user_name',

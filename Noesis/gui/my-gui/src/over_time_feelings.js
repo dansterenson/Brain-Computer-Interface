@@ -22,8 +22,8 @@ class OverTimeChart extends Component {
             <div>
                     <Line
                         data={this.props.chartData}
-                        height={300}
-                        width={450}
+                        height={500}
+                        width={650}
                         options={{
                             title:{
                                 display:'{true}}',
@@ -43,7 +43,7 @@ class OverTimeChart extends Component {
                                 }]
                             },
                             responsive: false,
-                            maintainAspectRatio: false,
+                            maintainAspectRatio: true,
                         }}
                     />
             </div>
