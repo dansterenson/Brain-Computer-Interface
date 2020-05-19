@@ -35,8 +35,8 @@ class Snapshots extends Component{
         const {match} = this.props;
         const columns = [{
             Header: 'Snapshot Id',
-            accessor: 'timestamp', // String-based value accessors!
-            Cell: props => <a className={"navStyle"} href={`/users/${match.params.id}/snapshots/${props.original.timestamp}`}>{props.original.timestamp}</a>
+            accessor: 'snapshot_id', // String-based value accessors!
+            Cell: props => <a className={"navStyle"} href={`/users/${match.params.id}/snapshots/${props.original.snapshot_id}`}>{props.original.snapshot_id}</a>
         }, {
             Header: 'Snapshot Date-Time',
             accessor: 'datetime',
@@ -46,11 +46,11 @@ class Snapshots extends Component{
 
         return (
             <div>
-                <h1 className={"page-header table-header animated fadeInLeft "}>Snapshots</h1>
+                <h1 className={"page-header table-header animated fadeInLeft titles "}>Snapshots</h1>
                 {<ReactTable className={"ReactTable animated fadeInLeft "}
                     showPageSizeOptions={true}
                     pageSizeOptions={[10, 20, 50, 100]}
-                    defaultPageSize={15}
+                    defaultPageSize={10}
                     defaultSortDesc={true}
                     defaultSorted={[{ // the sorting model for the table
                         id: 'datetime',

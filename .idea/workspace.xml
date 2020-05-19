@@ -1,25 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my-gui/src/chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-gui/src/over_time_feelings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-gui/src/styles/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my-gui/src/styles/animate.min.css" afterDir="false" />
+    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="Gui added more (charts))">
+      <change afterPath="$PROJECT_DIR$/Noesis/api/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/api/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/client/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/client/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/parsers/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/parsers/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/saver/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/saver/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/server/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/api/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/saver/data_base/data_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/saver/data_base/data_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py" beforeDir="false" afterPath="$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/color_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/color_image.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/feelings.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/feelings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/snapshot.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/snapshot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/snapshots.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/snapshots.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/styles/snapshots.scss" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/styles/snapshots.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-gui/src/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-gui/src/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/api/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/cli/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/cli/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/client/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/client/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/client/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/client/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/data_base/mongodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/data_base/mongodb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/color_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/color_image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/depth_image.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/depth_image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/feelings.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/feelings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/over_time_feelings.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/over_time_feelings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/pose.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/pose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/snapshot.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/snapshot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/snapshots.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/snapshots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/my-gui/src/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/readers/protobuff_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/readers/protobuff_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/saver/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/saver/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/saver/saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/server/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/server/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/server/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/server/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/server/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/server/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/1/2019-10-25_16-05-01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/1/2019-10-25_16-05-02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/1/2019-11-19_11-50-49.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-07.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-08.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/2/2019-10-25_16-06-10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/3/2019-10-25_16-07-01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/3/2019-10-25_16-07-02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/4/2019-10-25_16-08-01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/4/2019-10-25_16-08-02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/4/2019-10-25_16-08-03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/4/2019-10-25_16-08-04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/4/2019-10-25_16-08-05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/5/2019-10-25_16-09-01.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/5/2019-10-25_16-09-02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/5/2019-10-25_16-09-03.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/5/2019-10-25_16-09-04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/5/2019-10-25_16-09-05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/5/2019-10-25_16-09-06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_connection_from_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_connection_from_4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_listener_from_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_listener_from_4.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,22 +97,23 @@
   <component name="ProjectId" id="1UpwQvD8vdVDiad2VGKDMzCqYTU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fmri-scans-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Noesis/api" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Noesis/api" />
+      <recent name="$PROJECT_DIR$/Noesis/gui" />
+      <recent name="$PROJECT_DIR$/Noesis/saver" />
+      <recent name="$PROJECT_DIR$/Noesis/parsers" />
+      <recent name="$PROJECT_DIR$/Noesis/client/utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Noesis" />
+      <recent name="$PROJECT_DIR$/Noesis/server/utils" />
       <recent name="$PROJECT_DIR$/Haruspex/api" />
       <recent name="$PROJECT_DIR$/Haruspex/templates" />
-      <recent name="$PROJECT_DIR$/Haruspex/server" />
-      <recent name="$PROJECT_DIR$/Haruspex/client/readers" />
-      <recent name="$PROJECT_DIR$/Haruspex/client" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Haruspex/server/readers" />
-      <recent name="$PROJECT_DIR$/Haruspex/server" />
-      <recent name="$PROJECT_DIR$/Haruspex/client" />
-      <recent name="$PROJECT_DIR$/bci/utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -73,20 +128,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.api">
-    <configuration name="__main__ (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Haruspex" />
+  <component name="RunManager" selected="Python.gui">
+    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/client" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Noesis/gui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Haruspex/client/__main__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Noesis/gui/__main__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -95,40 +150,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Haruspex" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/client" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="client" />
-      <option name="PARAMETERS" value="'$PROJECT_DIR$/Haruspex/sample_updated.mind.gz'" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="api" />
+      <option name="SCRIPT_NAME" value="Noesis.api" />
       <option name="PARAMETERS" value="run-server" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,19 +172,19 @@
       <method v="2" />
     </configuration>
     <configuration name="cli" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="cli" />
-      <option name="PARAMETERS" value="get-result 42 1575446887339 color_image" />
+      <option name="SCRIPT_NAME" value="Noesis.cli" />
+      <option name="PARAMETERS" value="get-result 42 1575446896623 color_image -s ffffff2" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -159,7 +193,7 @@
       <method v="2" />
     </configuration>
     <configuration name="cli_client" type="PythonConfigurationType" factoryName="Python" singleton="false">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -181,7 +215,7 @@
       <method v="2" />
     </configuration>
     <configuration name="cli_server" type="PythonConfigurationType" factoryName="Python" singleton="false">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -203,19 +237,40 @@
       <method v="2" />
     </configuration>
     <configuration name="client" type="PythonConfigurationType" factoryName="Python">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="client" />
-      <option name="PARAMETERS" value="upload-sample $PROJECT_DIR$/Haruspex/sample_updated.mind.gz" />
+      <option name="SCRIPT_NAME" value="Noesis.client" />
+      <option name="PARAMETERS" value="upload-sample $PROJECT_DIR$/Noesis/sample_updated.mind.gz" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="Noesis.gui" />
+      <option name="PARAMETERS" value="run-server" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -224,19 +279,19 @@
       <method v="2" />
     </configuration>
     <configuration name="parser" type="PythonConfigurationType" factoryName="Python">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="parsers" />
-      <option name="PARAMETERS" value="run-parser feelings rabbitmq://127.0.0.1:5672/" />
+      <option name="SCRIPT_NAME" value="Noesis.parsers" />
+      <option name="PARAMETERS" value="run-parser pose" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -245,18 +300,18 @@
       <method v="2" />
     </configuration>
     <configuration name="saver" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="saver" />
+      <option name="SCRIPT_NAME" value="Noesis.saver" />
       <option name="PARAMETERS" value="run-saver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,18 +321,18 @@
       <method v="2" />
     </configuration>
     <configuration name="server" type="PythonConfigurationType" factoryName="Python">
-      <module name="Haruspex" />
+      <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Haruspex/" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="server" />
+      <option name="SCRIPT_NAME" value="Noesis.server" />
       <option name="PARAMETERS" value="run-server" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,18 +347,18 @@
       <item itemvalue="Python.server" />
       <item itemvalue="Python.client" />
       <item itemvalue="Python.parser" />
-      <item itemvalue="Python.__main__" />
-      <item itemvalue="Python.__main__ (2)" />
       <item itemvalue="Python.saver" />
       <item itemvalue="Python.api" />
       <item itemvalue="Python.cli" />
+      <item itemvalue="Python.gui" />
+      <item itemvalue="Python.__main__" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gui" />
         <item itemvalue="Python.api" />
-        <item itemvalue="Python.saver" />
         <item itemvalue="Python.cli" />
-        <item itemvalue="Python.__main__ (2)" />
+        <item itemvalue="Python.saver" />
         <item itemvalue="Python.__main__" />
       </list>
     </recent_temporary>
@@ -396,7 +451,35 @@
       <option name="project" value="LOCAL" />
       <updated>1588892765582</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Gui added more (charts))">
+      <created>1589115959065</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589115959065</updated>
+    </task>
+    <task id="LOCAL-00013" summary="changed name and checked each service">
+      <created>1589545087076</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589545087076</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fixed bugs, added build library to git">
+      <created>1589630331195</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589630331196</updated>
+    </task>
+    <task id="LOCAL-00015" summary="gui is done, connected to backend">
+      <created>1589842698136</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589842698136</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,7 +504,11 @@
     <MESSAGE value="Started Gui" />
     <MESSAGE value="Gui on the process" />
     <MESSAGE value="Gui added more" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gui added more" />
+    <MESSAGE value="Gui added more (charts))" />
+    <MESSAGE value="changed name and checked each service" />
+    <MESSAGE value="fixed bugs, added build library to git" />
+    <MESSAGE value="gui is done, connected to backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="gui is done, connected to backend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -432,7 +519,7 @@
           <option name="timeStamp" value="180" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/utils/protoco1l.py</url>
+          <url>file://$PROJECT_DIR$/Noesis/utils/protoco1l.py</url>
           <line>36</line>
           <option name="timeStamp" value="216" />
         </line-breakpoint>
@@ -442,99 +529,153 @@
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/parser_manager.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="344" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/parse_depth_image.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="369" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/client/client.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="430" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/saver/data_base/mongo_DB.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="447" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/api/api.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="452" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/utils/load_save_data.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="454" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/utils/load_save_data.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="455" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/cli/__main__.py</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>65</line>
           <option name="timeStamp" value="456" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/cli/__main__.py</url>
-          <line>13</line>
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>16</line>
           <option name="timeStamp" value="459" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/cli/__main__.py</url>
-          <line>53</line>
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>56</line>
           <option name="timeStamp" value="460" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/api/api.py</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/Noesis/api/api.py</url>
+          <line>54</line>
           <option name="timeStamp" value="463" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="464" />
+          <url>file://$PROJECT_DIR$/Noesis/server/server.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="481" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/parsers/__main__.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="465" />
+          <url>file://$PROJECT_DIR$/Noesis/server/server.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="485" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/saver/__main__.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="467" />
+          <url>file://$PROJECT_DIR$/Noesis/parsers/parse_color_image.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="496" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/saver/__main__.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="470" />
+          <url>file://$PROJECT_DIR$/Noesis/server/utils/load_save_data.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="498" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/saver/__main__.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="471" />
+          <url>file://$PROJECT_DIR$/Noesis/parsers/__main__.py</url>
+          <option name="timeStamp" value="504" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/api/api.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="472" />
+          <url>file://$PROJECT_DIR$/Noesis/parsers/__main__.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="505" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/api/api.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="473" />
+          <url>file://$PROJECT_DIR$/Noesis/saver/__main__.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="510" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Haruspex/api/api.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="474" />
+          <url>file://$PROJECT_DIR$/Noesis/saver/__main__.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="511" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/api/__main__.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="513" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/gui/__main__.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="514" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/gui/__main__.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="515" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/saver/__main__.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="517" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/data_base/mongodb.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="518" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/data_base/data_base.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="520" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/data_base/data_base.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="522" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/gui/__main__.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="528" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/client/__main__.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="533" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/readers/protobuff_reader.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="541" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/readers/protobuff_reader.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="542" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="543" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="544" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="545" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="546" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/cli/__main__.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="547" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/parsers/__main__.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="548" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/server/__main__.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="550" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

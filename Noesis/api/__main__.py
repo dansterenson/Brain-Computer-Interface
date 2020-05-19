@@ -2,6 +2,7 @@ import click
 from . import run_api_server
 import sys
 
+
 @click.group()
 def cli():
     pass

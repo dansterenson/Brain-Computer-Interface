@@ -4,6 +4,9 @@ import sys
 import ntpath
 from ..msg_queue import MessageQueue
 from .parser_manager import run_parser
+from .utils.logger import create_logger
+
+logger = create_logger("parser")
 
 
 @click.group()
@@ -38,13 +41,16 @@ def run_parser_cmd(parser_name, message_queue_url):
     message_queue.queue_binding(parser_name, 'snapshots')
 
     def callback_func(ch, method, properties, body):
+        logger.info(f'parser manager got a snapshot from mq')
         data = json.loads(body)
         parsed_result = run_parser(parser_name, data)
         parser_exchange_name = "parsed_" + parser_name
         message_queue.exchange_declaration(parser_exchange_name)
         message_queue.queue_publish(parser_exchange_name, '', json.dumps(parsed_result))
+        logger.info(f'{parser_name} parser saved parsed data to parser_{parser_name} exchange in mq')
 
     message_queue.consume_from_queue(parser_name, callback_func)
+    logger.info(f'parser is listening on mq')
     message_queue.start_consuming()
 
 

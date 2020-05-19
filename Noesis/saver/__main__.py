@@ -5,10 +5,15 @@ import click
 from ..msg_queue import MessageQueue
 from .saver import Saver
 from ..parsers import Parser
+from .utils.logger import create_logger
+
+logger = create_logger("saver")
+
 
 @click.group()
 def cli():
     pass
+
 
 @cli.command('save')
 @click.option('-d', '--database', default='mongodb://localhost:27017')
@@ -33,8 +38,6 @@ def save_cmd(database, topic_name, data_path):
         print(f"From '{ntpath.basename(f.name)}' successfully saved {topic_name}.")
 
 
-
-
 @cli.command('run-saver')
 @click.argument('database', default='mongodb://localhost:27017')
 @click.argument('mq_url', default="rabbitmq://127.0.0.1:5672/")
@@ -56,6 +59,7 @@ def run_save_cmd(database, mq_url):
         mq.queue_binding(res.method.queue, exchange_name)
         mq.consume_from_queue(res.method.queue, callback)
 
+    logger.debug(f'Saver is listening on mq')
     mq.start_consuming()
 
 

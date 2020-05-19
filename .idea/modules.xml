@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../Haruspex/.idea/Haruspex.iml" filepath="$PROJECT_DIR$/../Haruspex/.idea/Haruspex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Noesis/.idea/Noesis.iml" filepath="$PROJECT_DIR$/../Noesis/.idea/Noesis.iml" />
     </modules>
   </component>
 </project>

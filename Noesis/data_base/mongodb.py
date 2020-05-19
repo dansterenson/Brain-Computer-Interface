@@ -44,7 +44,7 @@ class MongoDB:
 
     def get_user_feelings(self, user_id):
         res_list = []
-        snapshots = self.db['snapshots'].find({"user_id": user_id, "parser_type": "feelings"})
+        snapshots = list(self.db['snapshots'].find({"user_id": int(user_id), "parser_type": "feelings"}, {'_id': 0}))
         for snap in snapshots:
             res_list.append({'timestamp': snap['timestamp'], 'feelings_at_timestamp': snap['parsed_data']})
         return res_list

@@ -22,8 +22,8 @@ class OverTimeChart extends Component {
             <div>
                     <Line
                         data={this.props.chartData}
-                        height={500}
-                        width={650}
+                        height={450}
+                        width={600}
                         options={{
                             title:{
                                 display:'{true}}',

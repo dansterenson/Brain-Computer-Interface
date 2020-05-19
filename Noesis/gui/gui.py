@@ -1,6 +1,9 @@
-from flask import Flask, render_template, jsonify,make_response
+from flask import Flask, render_template, jsonify, make_response, send_from_directory
 from flask_cors import CORS
 import requests
+from .utils.logger import create_logger
+
+logger = create_logger("gui")
 
 
 def run_server(host='127.0.0.1', port=8080, api_host='127.0.0.1', api_port=5000):
@@ -18,5 +21,13 @@ def run_server(host='127.0.0.1', port=8080, api_host='127.0.0.1', api_port=5000)
     @app.route('/<path:path>')
     def catch_all(path):
         return render_template('index.html')
+
+    @app.route('/favicon.ico')
+    def favicon():
+        return send_from_directory('./my-gui/build', 'favicon.ico')
+
+    @app.route("/manifest.json")
+    def manifest():
+        return send_from_directory('./my-gui/build', 'manifest.json')
 
     app.run(host=host, port=port)

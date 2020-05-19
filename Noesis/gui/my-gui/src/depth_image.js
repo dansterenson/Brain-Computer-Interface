@@ -54,7 +54,7 @@ class DepthImage extends Component{
 
         return (
             <div className={"table-header"}>
-                <h1>depth Image</h1>
+                <h1 className={"titles"}>depth Image</h1>
                 {<ReactTable
                     showPagination={false}
                     data={items}

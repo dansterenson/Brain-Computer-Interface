@@ -1,6 +1,10 @@
 from flask import Flask, jsonify, send_file
 from ..data_base import DataBase
 from flask_cors import CORS
+from .utils.logger import create_logger
+
+logger = create_logger("api")
+
 app = Flask(__name__)
 cors = CORS(app)
 
@@ -25,8 +29,14 @@ def get_users():
 def get_user(user_id):
     data_base = app.config["DATA_BASE"]
     user = data_base.get_user(user_id)
+    return jsonify(user)
+
+
+@app.route('/users/<user_id>/feelings', methods=['GET'])
+def get_user_feelings(user_id):
+    data_base = app.config["DATA_BASE"]
     feelings = data_base.get_user_feelings(user_id)
-    return jsonify({'user': user, 'feelings': feelings})
+    return jsonify(feelings)
 
 
 @app.route('/users/<user_id>/snapshots', methods=['GET'])
@@ -37,7 +47,7 @@ def get_snapshots(user_id):
     for snapshot in snapshots_of_user:
         snapshot_id = snapshot['timestamp']
         snapshots_set.add(snapshot_id)
-    return jsonify([{"timestamp": timestamp, "datetime": timestamp} for timestamp in snapshots_set])
+    return jsonify([{"snapshot_id": timestamp, "datetime": timestamp} for timestamp in snapshots_set])
 
 
 @app.route('/users/<user_id>/snapshots/<snapshot_id>', methods=['GET'])

@@ -47,7 +47,7 @@ class Feelings extends Component{
     render() {
         return (
             <div>
-                <h1>Feelings</h1>
+                <h1 className={"titles"}>Feelings</h1>
                 <Chart chartData={this.state.chartData}/>
             </div>
         );

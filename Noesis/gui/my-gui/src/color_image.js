@@ -57,7 +57,7 @@ class ColorImage extends Component{
 
         return (
             <div className={"table-header"}>
-                <h1>Color Image</h1>
+                <h1 className={"titles"}>Color Image</h1>
                 {<ReactTable
                     showPagination={false}
                     data={items}

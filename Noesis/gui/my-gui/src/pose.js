@@ -64,15 +64,15 @@ class Pose extends Component{
         ]
         return (
             <div className={"table-header"}>
-                <h1>User Position</h1>
-                <h3>Translation</h3>
+                <h2 className={"titles"}>User Position</h2>
+                <h5>Translation</h5>
                 {<ReactTable
                     showPagination={false}
                     data={items}
                     columns={col_translation}
                     defaultPageSize={1}
                 />}
-                <h3>Rotation</h3>
+                <h5>Rotation</h5>
                 {<ReactTable
                     showPagination={false}
                     data={items}

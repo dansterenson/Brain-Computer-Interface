@@ -9,6 +9,7 @@ import Moment from 'react-moment';
 import Chart from "./chart";
 import OverTimeChart from "./over_time_feelings";
 import {getUser} from "./connect_api";
+import {getUserFeelings} from "./connect_api";
 
 
 
@@ -25,14 +26,15 @@ class User extends Component{
 
     fetchItems = async () => {
         const {match} = this.props;
-        const items = await getUser(match.params.id)
-        this.setState({user: items.user})
-        console.log(items)
-        const exhaustion = Object.keys(items.feelings).map(m => (items.feelings[m].feelings_at_timestamp.exhaustion));
-        const happiness = Object.keys(items.feelings).map(m => (items.feelings[m].feelings_at_timestamp.happiness));
-        const hunger = Object.keys(items.feelings).map(m => (items.feelings[m].feelings_at_timestamp.hunger));
-        const thirst = Object.keys(items.feelings).map(m => (items.feelings[m].feelings_at_timestamp.thirst));
-        const timestamps = Object.keys(items.feelings).map(m => (items.feelings[m].timestamp));
+        const user = await getUser(match.params.id)
+        const feelings = await getUserFeelings(match.params.id)
+        this.setState({user: user})
+        console.log(user)
+        const exhaustion = Object.keys(feelings).map(m => (feelings[m].feelings_at_timestamp.exhaustion));
+        const happiness = Object.keys(feelings).map((m) => feelings[m].feelings_at_timestamp.happiness);
+        const hunger = Object.keys(feelings).map((m) => feelings[m].feelings_at_timestamp.hunger);
+        const thirst = Object.keys(feelings).map((m) => feelings[m].feelings_at_timestamp.thirst);
+        const timestamps = Object.keys(feelings).map((m) => feelings[m].timestamp);
 
         const chartData1 = {
             labels: timestamps,

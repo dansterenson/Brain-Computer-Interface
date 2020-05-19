@@ -52,7 +52,7 @@ class Snapshot extends Component{
 
         return (
             <div className={"table-header"}>
-                <h1>Snapshot Details</h1>
+                <h2 className={"titles"}>Snapshot Details</h2>
                 {<ReactTable
                     data={items}
                     columns={columns}
