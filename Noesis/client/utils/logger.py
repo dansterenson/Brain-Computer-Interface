@@ -2,7 +2,7 @@ import logging
 
 
 def create_logger(file_name, level=logging.INFO, formatter='%(asctime)s:%(levelname)s:%(message)s'):
-    logging.basicConfig(filename=f'./log_files/{file_name}.log', level=level, format=formatter)
+    logging.basicConfig(filename=f'log_files/{file_name}.log', level=level, format=formatter)
     # set up logging to console
     console = logging.StreamHandler()
     console.setLevel(level)

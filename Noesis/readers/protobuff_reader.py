@@ -12,6 +12,7 @@ class ProtoReader(ReaderAbstract):
     def get_new_user(self):
         user_size = int.from_bytes(self.file.read(4), 'little')
         user_from_file = self.file.read(user_size)
+        res = protoUser.FromString(user_from_file)
         user_from_proto = protoUser()
         user_from_proto.ParseFromString(user_from_file)
         return user_from_proto

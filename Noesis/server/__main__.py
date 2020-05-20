@@ -4,7 +4,7 @@ from .server import run_server
 from ..msg_queue import MessageQueue
 from .utils.logger import create_logger
 
-logger = create_logger("server")
+#logger = create_logger("server")
 
 
 @click.group()
@@ -23,7 +23,7 @@ def run_server_cmd(host, port, mq_url):
         mq = MessageQueue(mq_url)
         mq.exchange_declaration('snapshots')
         mq.queue_publish('snapshots', '', message_to_publish)
-        logger.debug('Message queue published snapshot to "snapshots" exchange')
+        #logger.info('Message queue published snapshot to "snapshots" exchange')
         mq.close()
 
     try:
