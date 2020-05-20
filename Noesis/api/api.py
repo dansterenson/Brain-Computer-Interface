@@ -3,8 +3,6 @@ from ..data_base import DataBase
 from flask_cors import CORS
 from .utils.logger import create_logger
 
-logger = create_logger("api")
-
 app = Flask(__name__)
 cors = CORS(app)
 
@@ -12,6 +10,7 @@ cors = CORS(app)
 def run_api_server(host, port, database_url):
     data_base = DataBase(database_url)
     app.config["DATA_BASE"] = data_base
+    app.logger.addHandler(create_logger('api'))
     app.run(host, port, threaded=True)
 
 
