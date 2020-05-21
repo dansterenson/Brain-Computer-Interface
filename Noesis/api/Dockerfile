@@ -9,4 +9,4 @@ WORKDIR /Noesis
 RUN mkdir log_files
 RUN pip install --no-cache-dir -r Noesis/requirements.txt
 
-CMD ["python3", "-m", "Noesis.api", "run-server"]
+ENTRYPOINT python3 -m Noesis.api run-server -h '0.0.0.0' -p 5000 --database mongodb://mongodb.containersnetwork:27017

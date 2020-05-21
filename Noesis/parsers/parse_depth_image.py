@@ -1,4 +1,3 @@
-import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 from .parser_manager import user_info_data
 from PIL import Image
