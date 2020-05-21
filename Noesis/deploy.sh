@@ -12,7 +12,6 @@ sudo docker build -f parsers/Dockerfile -t feelings --build-arg PARSER_NAME=feel
 
 sudo docker container ls -a
 
-
 sudo docker stop api
 sudo docker rm api
 
