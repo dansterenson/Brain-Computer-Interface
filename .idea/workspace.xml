@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="added testers">
-      <change afterPath="$PROJECT_DIR$/Noesis/parsers/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/parsers/requirements.txt" afterDir="false" />
+    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/api/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Noesis/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/parsers/parse_depth_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/parse_depth_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_parsers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/parsers/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/parsers/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -412,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590005920215</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="dockers">
+      <created>1590047279056</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1590047279056</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,7 +449,8 @@
     <MESSAGE value="fixed bugs nd added loggers" />
     <MESSAGE value="added testers" />
     <MESSAGE value="added deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="added deploy" />
+    <MESSAGE value="dockers" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,8 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name = ''
-           'Noesis',
+    name = 'Noesis',
     version = '0.1.0',
     author = 'Daniel Sterenson',
     description = 'A project of a Brain Computer Interface for "Advance System Design" course in TAU.',

@@ -11,4 +11,4 @@ RUN mkdir log_files
 RUN pip install --no-cache-dir -r Noesis/requirements.txt
 RUN echo ${PARSER_NAME}
 
-CMD ["python3", "-m", "Noesis.parsers", "run-parser" ,"${PARSER_NAME}"]
+ENTRYPOINT python3 -m Noesis.parsers run-parser ${PARSER_NAME} rabbitmq://rab.containersnetwork:5672
