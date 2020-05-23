@@ -7,7 +7,7 @@ from mock import patch, MagicMock
 
 @pytest.fixture
 def file_data():
-    message_path = str(pathlib.Path('data/test_data.json').absolute())
+    message_path = str(pathlib.Path('tests/data/test_data.json').absolute())
     with open(message_path, 'r') as file:
         data = json.load(file)
     return data

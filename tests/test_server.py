@@ -15,7 +15,7 @@ def test_my_server(capsys):
     server.daemon = True
     server.start()
     time.sleep(1)
-    upload_sample((host, port), 'data/test_file.mind.gz')
+    upload_sample((host, port), 'tests/data/test_file.mind.gz')
     time.sleep(1)
     captured = capsys.readouterr()
     assert f"Running on http://{host}:{port}/" in captured.err

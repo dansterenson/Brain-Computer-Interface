@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/source/api.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/cli.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/client.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/gui.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/modules.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/parsers.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/saver.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/source/server.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_parsers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_server.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.parser">
+  <component name="RunManager" selected="Python tests.pytest for test_client.test_client">
     <configuration name="cli_client" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,10 +276,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_client.test_client" />
         <item itemvalue="Python tests.pytest for test_saver.test_saver" />
         <item itemvalue="Python.saver" />
         <item itemvalue="Python tests.pytest for test_parsers.test_feelings_parser" />
-        <item itemvalue="Python tests.pytest for test_client.test_client" />
         <item itemvalue="Python tests.pytest for test_parsers.test_color_image_parser" />
       </list>
     </recent_temporary>
@@ -454,7 +470,28 @@
       <option name="project" value="LOCAL" />
       <updated>1590245429415</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="started Readme, added dockers">
+      <created>1590245816037</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1590245816037</updated>
+    </task>
+    <task id="LOCAL-00027" summary="started Readme, added dockers">
+      <created>1590245896632</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1590245896632</updated>
+    </task>
+    <task id="LOCAL-00028" summary="started Readme, added dockers">
+      <created>1590245945545</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1590245945545</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
