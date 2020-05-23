@@ -12,12 +12,7 @@ class Saver:
         self.db.save_user(user)
         snapshot_data = data['data']
         self.db.save_snapshot(user, data['timestamp'], snapshot_data, topic_name)
-        logger.debug(f'Saver saved parsed data {data} to db')
-
-
-
-
-
+        logger.info('Saver saved parsed data to db')
 
 
 

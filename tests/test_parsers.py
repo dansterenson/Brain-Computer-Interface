@@ -2,6 +2,7 @@ import pytest
 from Noesis.parsers import run_parser
 import pathlib
 import json
+from mock import patch, MagicMock
 
 
 @pytest.fixture
@@ -10,7 +11,6 @@ def file_data():
     with open(message_path, 'r') as file:
         data = json.load(file)
     return data
-
 
 def test_feelings_parser(file_data):
     parsed_result = run_parser('feelings', file_data)

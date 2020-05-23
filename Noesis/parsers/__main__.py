@@ -33,8 +33,9 @@ def parse_cmd(parser_name, path_to_data):
 
 @cli.command('run-parser')
 @click.argument('parser_name')
-@click.argument('message_queue_url', default="rabbitmq://127.0.0.1:5672/")
+@click.argument('message_queue_url')#, default="rabbitmq://127.0.0.1:5672/")
 def run_parser_cmd(parser_name, message_queue_url):
+    print(message_queue_url)
     message_queue = MessageQueue(message_queue_url)
     message_queue.exchange_declaration("snapshots")
     message_queue.queue_declaration(parser_name)

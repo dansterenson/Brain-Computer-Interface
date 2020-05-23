@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
+    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="more dockers">
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/saver/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/saver/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/server/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Noesis/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Noesis/parsers/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/__main__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Noesis/parsers/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/saver/saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_parsers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_saver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,23 +42,23 @@
   <component name="ProjectId" id="1UpwQvD8vdVDiad2VGKDMzCqYTU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Noesis/parsers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Noesis/server" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Noesis/server" />
+      <recent name="$PROJECT_DIR$/Noesis/gui" />
+      <recent name="$PROJECT_DIR$/Noesis/client" />
+      <recent name="$PROJECT_DIR$/Noesis/saver" />
+      <recent name="$PROJECT_DIR$/Noesis/parsers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests/data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Noesis" />
       <recent name="$PROJECT_DIR$/Noesis/server/utils" />
       <recent name="$PROJECT_DIR$/Haruspex/api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Noesis/parsers" />
-      <recent name="$PROJECT_DIR$/Noesis/api" />
-      <recent name="$PROJECT_DIR$/Noesis/gui" />
-      <recent name="$PROJECT_DIR$/Noesis/saver" />
-      <recent name="$PROJECT_DIR$/Noesis/client/utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,28 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_parsers.test_color_image_parser">
-    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Noesis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="Noesis.api" />
-      <option name="PARAMETERS" value="run-server" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.parser">
     <configuration name="cli_client" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,7 +152,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="Noesis.parsers" />
-      <option name="PARAMETERS" value="run-parser pose" />
+      <option name="PARAMETERS" value="run-parser pose &quot;rabbitmq://127.0.0.1:4334/&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="saver" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="Noesis.saver" />
+      <option name="PARAMETERS" value="run-saver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -189,6 +200,21 @@
       <option name="MODULE_MODE" value="true" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_client.test_client" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_client.test_client&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for test_parsers.test_color_image_parser" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -221,21 +247,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_parsers.test_pose_parser" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Noesis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_parsers.test_pose_parser&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_saver.test_saver" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,19 +268,19 @@
       <item itemvalue="Python.server" />
       <item itemvalue="Python.client" />
       <item itemvalue="Python.parser" />
-      <item itemvalue="Python.api" />
+      <item itemvalue="Python.saver" />
       <item itemvalue="Python tests.pytest for test_parsers.test_feelings_parser" />
-      <item itemvalue="Python tests.pytest for test_saver.test_saver" />
-      <item itemvalue="Python tests.pytest for test_parsers.test_pose_parser" />
       <item itemvalue="Python tests.pytest for test_parsers.test_color_image_parser" />
+      <item itemvalue="Python tests.pytest for test_client.test_client" />
+      <item itemvalue="Python tests.pytest for test_saver.test_saver" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_parsers.test_color_image_parser" />
-        <item itemvalue="Python tests.pytest for test_parsers.test_pose_parser" />
-        <item itemvalue="Python tests.pytest for test_parsers.test_feelings_parser" />
-        <item itemvalue="Python.api" />
         <item itemvalue="Python tests.pytest for test_saver.test_saver" />
+        <item itemvalue="Python.saver" />
+        <item itemvalue="Python tests.pytest for test_parsers.test_feelings_parser" />
+        <item itemvalue="Python tests.pytest for test_client.test_client" />
+        <item itemvalue="Python tests.pytest for test_parsers.test_color_image_parser" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +428,28 @@
       <option name="project" value="LOCAL" />
       <updated>1590047279056</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="more dockers">
+      <created>1590073887182</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1590073887182</updated>
+    </task>
+    <task id="LOCAL-00021" summary="more dockers">
+      <created>1590078013302</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1590078013302</updated>
+    </task>
+    <task id="LOCAL-00022" summary="test push">
+      <created>1590078331885</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1590078331885</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,7 +482,9 @@
     <MESSAGE value="added testers" />
     <MESSAGE value="added deploy" />
     <MESSAGE value="dockers" />
-    <option name="LAST_COMMIT_MESSAGE" value="dockers" />
+    <MESSAGE value="more dockers" />
+    <MESSAGE value="test push" />
+    <option name="LAST_COMMIT_MESSAGE" value="test push" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -501,7 +535,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Noesis/parsers/__main__.py</url>
-          <line>44</line>
+          <line>45</line>
           <option name="timeStamp" value="505" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -540,16 +574,6 @@
           <option name="timeStamp" value="518" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Noesis/data_base/data_base.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="520" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Noesis/data_base/data_base.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="522" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Noesis/gui/__main__.py</url>
           <line>14</line>
           <option name="timeStamp" value="528" />
@@ -586,7 +610,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Noesis/parsers/__main__.py</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="548" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -640,16 +664,6 @@
           <option name="timeStamp" value="613" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_saver.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="615" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_saver.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="616" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Noesis/api/__main__.py</url>
           <line>18</line>
           <option name="timeStamp" value="619" />
@@ -658,6 +672,16 @@
           <url>file://$PROJECT_DIR$/Noesis/api/api.py</url>
           <line>28</line>
           <option name="timeStamp" value="621" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_saver.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="629" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/parsers/__main__.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="630" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
