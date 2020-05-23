@@ -4,7 +4,7 @@ A project which includes a client, which streams cognition snapshots to a server
 The results are then exposed via a RESTful API, which is consumed by a CLI; there's also a GUI, which visualizes the results in various ways.
 
 
-![alt text](https://github.com/dansterenson/Noesis/images/project_desc.PNG?raw=true)
+![alt text](https://github.com/dansterenson/Brain-Computer-Interface/blob/master/images/project%20desc.png?raw=true)
 ## Installation
 
 1. Clone the repository and enter it:
