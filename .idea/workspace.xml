@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/source/api.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/cli.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/client.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/gui.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/modules.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/parsers.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/saver.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/server.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/make.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_parsers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -491,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590245945545</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added documentation">
+      <created>1590270027916</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1590270027917</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +519,8 @@
     <MESSAGE value="more dockers" />
     <MESSAGE value="test push" />
     <MESSAGE value="started Readme, added dockers" />
-    <option name="LAST_COMMIT_MESSAGE" value="started Readme, added dockers" />
+    <MESSAGE value="Added documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added documentation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
