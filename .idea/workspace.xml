@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="more dockers">
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/saver/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/saver/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/server/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/server/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/parsers/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/parsers/__main__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/parsers/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/parsers/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/saver/saver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_parsers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_saver.py" afterDir="false" />
-    </list>
+    <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590078331885</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="started Readme, added dockers">
+      <created>1590245228371</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1590245228372</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,7 +473,8 @@
     <MESSAGE value="dockers" />
     <MESSAGE value="more dockers" />
     <MESSAGE value="test push" />
-    <option name="LAST_COMMIT_MESSAGE" value="test push" />
+    <MESSAGE value="started Readme, added dockers" />
+    <option name="LAST_COMMIT_MESSAGE" value="started Readme, added dockers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
