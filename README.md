@@ -4,7 +4,7 @@ A project which includes a client, which streams cognition snapshots to a server
 The results are then exposed via a RESTful API, which is consumed by a CLI; there's also a GUI, which visualizes the results in various ways.
 
 
-![alt text](https://github.com/dansterenson/Brain-Computer-Interface/blob/master/images/project%20desc.png?raw=true)
+<img src="https://github.com/dansterenson/Brain-Computer-Interface/blob/master/images/project%20desc.png?raw=true )" width="350" />
 ## Installation
 
 1. Clone the repository and enter it:
