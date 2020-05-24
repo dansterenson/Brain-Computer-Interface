@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Noesis/gui/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -504,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590274825627</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="working on gui docker">
+      <created>1590339661633</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1590339661633</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,7 +549,8 @@
     <MESSAGE value="test push" />
     <MESSAGE value="started Readme, added dockers" />
     <MESSAGE value="Added documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added documentation" />
+    <MESSAGE value="working on gui docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on gui docker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
