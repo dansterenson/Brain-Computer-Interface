@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/precache-manifest.625034c6d8f360baa73757dd9ca908ce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/2.bfa46653.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/2.bfa46653.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/main.0e407316.chunk.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/main.0e407316.chunk.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/2.b1e5974d.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/2.b1e5974d.chunk.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/2.b1e5974d.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/main.34e09a8b.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/main.34e09a8b.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/runtime-main.098b95e3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/runtime-main.098b95e3.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/public/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/public/site.webmanifest" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/connect_api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/icons/home_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/styles/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/styles/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/styles/snapshots.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/gui/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/server/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/server/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/server/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +64,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_client.test_client">
+  <component name="RunManager" selected="Python.client">
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="Noesis.api" />
+      <option name="PARAMETERS" value="run-server" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cli_client" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -136,6 +144,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="Noesis.client" />
       <option name="PARAMETERS" value="upload-sample $PROJECT_DIR$/sample_updated.mind.gz" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="Noesis.gui" />
+      <option name="PARAMETERS" value="run-server" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -221,36 +250,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_parsers.test_color_image_parser" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Noesis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_parsers.test_color_image_parser&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_parsers.test_feelings_parser" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Noesis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_parsers.test_feelings_parser&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest for test_saver.test_saver" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -273,18 +272,18 @@
       <item itemvalue="Python.client" />
       <item itemvalue="Python.parser" />
       <item itemvalue="Python.saver" />
-      <item itemvalue="Python tests.pytest for test_parsers.test_feelings_parser" />
-      <item itemvalue="Python tests.pytest for test_parsers.test_color_image_parser" />
+      <item itemvalue="Python.gui" />
+      <item itemvalue="Python.api" />
       <item itemvalue="Python tests.pytest for test_client.test_client" />
       <item itemvalue="Python tests.pytest for test_saver.test_saver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.api" />
+        <item itemvalue="Python.gui" />
         <item itemvalue="Python tests.pytest for test_client.test_client" />
         <item itemvalue="Python tests.pytest for test_saver.test_saver" />
         <item itemvalue="Python.saver" />
-        <item itemvalue="Python tests.pytest for test_parsers.test_feelings_parser" />
-        <item itemvalue="Python tests.pytest for test_parsers.test_color_image_parser" />
       </list>
     </recent_temporary>
   </component>
@@ -537,7 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590359314764</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="added animate.css to git">
+      <created>1590387764467</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1590387764467</updated>
+    </task>
+    <task id="LOCAL-00036" summary="added animate.css to git">
+      <created>1590387990854</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1590387990854</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -575,7 +588,8 @@
     <MESSAGE value="started Readme, added dockers" />
     <MESSAGE value="Added documentation" />
     <MESSAGE value="working on gui docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on gui docker" />
+    <MESSAGE value="added animate.css to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="added animate.css to git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,6 +1,7 @@
 FROM python:3.8-slim
 
 COPY msg_queue /Noesis/Noesis/msg_queue
+COPY readers /Noesis/Noesis/readers
 COPY server /Noesis/Noesis/server
 
 RUN mv /Noesis/Noesis/server/requirements.txt /Noesis/Noesis

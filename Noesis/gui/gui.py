@@ -9,9 +9,10 @@ logger = create_logger("gui")
 def run_server(host='127.0.0.1', port=8080, api_host='127.0.0.1', api_port=5000):
     app = Flask(__name__, static_folder='./my-gui/build/static',  template_folder="./my-gui/build")
     cors = CORS(app, resources={r"*": {"origins": "*"}})
-
+    print(f"host = {host}, port= {port}, api-host= {api_host}, api-port = {api_port}")
     @app.route('/api/<path:path>')
     def api_call(path):
+        print("got here")
         if (path.endswith('data')):
             return make_response(jsonify(f'http://{api_host if api_host != "api" else "localhost"}:{api_port}/{path}'),
                                  200)
