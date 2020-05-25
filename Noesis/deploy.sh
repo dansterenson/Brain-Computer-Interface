@@ -1,4 +1,4 @@
-sudo docker volume create --name dataVolume1
+sudo docker volume create --name DataVolume1
 sudo docker network create containersnetwork
 sudo docker stop mongodb rab
 sudo docker rm mongodb rab
@@ -20,11 +20,11 @@ sudo docker stop gui api saver server color_image_parser depth_image_parser pose
 sudo docker rm gui api saver server color_image_parser depth_image_parser pose_parser feelings_parser
 
 
-sudo docker run -d --name api -p 5000:5000/tcp -v DataVolume1:/datavolume1 --net containersnetwork api
+sudo docker run -d --name api -p 5000:5000/tcp -v DataVolume1:/Noesis/users --net containersnetwork api
 sudo docker run -d --name gui -p 8080:8080/tcp --net containersnetwork gui
-sudo docker run -d --name server -p 0.0.0.0:8000:8000/tcp -v DataVolume1:/datavolume1 --net containersnetwork server
+sudo docker run -d --name server -p 0.0.0.0:8000:8000/tcp -v DataVolume1:/Noesis/users --net containersnetwork server
 sudo docker run -d --name saver --net containersnetwork saver
 sudo docker run -d --name pose_parser --net containersnetwork pose
 sudo docker run -d --name feelings_parser --net containersnetwork feelings
-sudo docker run -d --name color_image_parser -v DataVolume1:/datavolume1 --net containersnetwork color_image
-sudo docker run -d --name depth_image_parser -v DataVolume1:/datavolume1 --net containersnetwork depth_image
+sudo docker run -d --name color_image_parser -v DataVolume1:/Noesis/users --net containersnetwork color_image
+sudo docker run -d --name depth_image_parser -v DataVolume1:/Noesis/users --net containersnetwork depth_image

@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Noesis/gui/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/test_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/test_file.mind.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/users/5/1575446887339/color_image/color_image_data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/users/5/1575446887339/depth_image/depth_image_data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/api/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Noesis/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/gui/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/gui/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/server/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/server/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -550,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590387990854</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="dockers work, need to fix shared volume">
+      <created>1590420861966</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1590420861966</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -589,7 +594,8 @@
     <MESSAGE value="Added documentation" />
     <MESSAGE value="working on gui docker" />
     <MESSAGE value="added animate.css to git" />
-    <option name="LAST_COMMIT_MESSAGE" value="added animate.css to git" />
+    <MESSAGE value="dockers work, need to fix shared volume" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockers work, need to fix shared volume" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
