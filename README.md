@@ -62,7 +62,7 @@ After uploading is completed, you can view the results in the GUI:
 Or use the CLI to see the results
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/38375556/82829891-0a7a0d80-9ebd-11ea-84ec-4893894a996c.gif" width="900"/>
+<img src="https://user-images.githubusercontent.com/38375556/82829891-0a7a0d80-9ebd-11ea-84ec-4893894a996c.gif" width="750"/>
 </p>
 
 ## Documentation
