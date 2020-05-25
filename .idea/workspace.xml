@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/gui/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/gui/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/precache-manifest.625034c6d8f360baa73757dd9ca908ce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/2.bfa46653.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/2.bfa46653.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/main.0e407316.chunk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/css/main.0e407316.chunk.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/2.b1e5974d.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/2.b1e5974d.chunk.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/2.b1e5974d.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/main.34e09a8b.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/main.34e09a8b.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/runtime-main.098b95e3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/build/static/js/runtime-main.098b95e3.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/public/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/public/site.webmanifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/connect_api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/icons/home_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/styles/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/styles/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Noesis/gui/my-gui/src/styles/snapshots.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -512,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590339661633</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="working on gui docker">
+      <created>1590359314764</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1590359314764</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -1,0 +1,196 @@
+.home-page {
+
+  font-size: 400%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  color: rgb(253, 79, 42);
+}
+
+.pchart {
+
+  margin: 0;
+  position: absolute;
+  top: 58%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+}
+
+.bchart {
+
+  margin: 0;
+  position: absolute;
+  top: 58%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+}
+
+
+.page-header {
+  font-size: 200%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: black;
+}
+
+.ReactTable {
+  font-family: "Helvetica Neue",
+  Helvetica, Arial, sans-serif;
+  width: 60%;
+  margin: 15px auto;
+  border-radius: 10px;
+
+  .rt-thead {
+    font-family: "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: rgb(254, 160, 39);
+  }
+
+  .rt-th {
+    font-family: "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .rt-tr {
+    .rt-td {
+      font-family: "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+      background: white;
+      height: auto ;
+      display: flex;
+      font-size: 16px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.navStyle {
+  color: rgb(98, 158, 187);
+  list-style-type: circle
+}
+
+.top_bar_links {
+  color: rgb(240, 226, 200);
+}
+
+.array {
+  color: rgb(98, 158, 187);
+  display: flex;
+  flex-direction: column;
+}
+
+.color-image{
+  margin: 50px 0px;
+  padding:3px;
+  border:1px solid rgb(254, 160, 39);
+  background-color:rgb(254, 160, 39);
+  border-radius: 10px;
+}
+
+body
+{
+  background-color: rgb(240, 226, 200);; /* The page background will be black */
+  color: black; /* The page text will be white */
+}
+
+/*--Global----------------------------------------------------------------*/
+
+.welcome{
+  font-family: "Helvetica Neue",
+  Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200; line-height: 26.4px;
+
+  color: black;
+  text-decoration: none;
+  font-size: 400%;
+  margin: 125px;
+  position: center;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+
+}
+
+.titles{
+  font-family: "Helvetica Neue",
+  Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700; line-height: 26.4px;
+  margin: 40px;
+}
+
+
+.button-style {
+  background-color: rgb(253, 79, 42);
+  padding: 1em 3em;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin: -60px;
+  position: center;
+  top: 150%;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.button-style:hover {
+  background-color: #fea027;
+  color: white;
+}
+
+.pic_button-style {
+  background-color: rgb(253, 79, 42);
+  padding: 1em 3em;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 100%;
+  margin: 100px;
+  position: center;
+  top: 100%;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+.pic_button-style:hover {
+  background-color: #fea027;
+  color: white;
+}
+
+
+.feelings-over-time {
+  margin: 0;
+  position: center;
+  left: 50%;
+}
+canvas{
+  margin: 0 auto;
+}
+
+
