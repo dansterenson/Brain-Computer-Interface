@@ -5,11 +5,9 @@ The results are then exposed via a RESTful API, which is consumed by a CLI; ther
 
 <p align="center">
 <img src="https://github.com/dansterenson/Brain-Computer-Interface/blob/master/images/project%20desc.png?raw=true )" width="550" />
+<img src="https://user-images.githubusercontent.com/38375556/82829410-dbaf6780-9ebb-11ea-9357-f26af3995a4c.gif" width="550" />
 </p>
 
-![ezgif com-crop](https://user-images.githubusercontent.com/38375556/82829410-dbaf6780-9ebb-11ea-9357-f26af3995a4c.gif)
-
-<img src="https://user-images.githubusercontent.com/38375556/82829410-dbaf6780-9ebb-11ea-9357-f26af3995a4c.gif" width="550" />
 
 
 ## Installation
