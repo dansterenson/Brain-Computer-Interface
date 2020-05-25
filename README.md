@@ -5,7 +5,6 @@ The results are then exposed via a RESTful API, which is consumed by a CLI; ther
 
 <p align="center">
 <img src="https://github.com/dansterenson/Brain-Computer-Interface/blob/master/images/project%20desc.png?raw=true )" width="550" />
-<img src="https://user-images.githubusercontent.com/38375556/82829891-0a7a0d80-9ebd-11ea-84ec-4893894a996c.gif" width="550" />
 </p>
 
 
@@ -61,6 +60,10 @@ After uploading is completed, you can view the results in the GUI:
     [Noesis] $ http://localhost:8080
    ```
 Or use the CLI to see the results
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38375556/82829891-0a7a0d80-9ebd-11ea-84ec-4893894a996c.gif"/>
+</p>
 
 ## Documentation
 The full documenation is available [here](https://Noesis.readthedocs.io/en/latest/index.html).
