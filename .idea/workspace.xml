@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/saver/saver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/text1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/thought.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Noesis/web.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/api.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/api.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/source/gui.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/gui.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +69,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.client">
-    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.pytest for test_api.test_api_get_user_snapshot_result_specific">
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -71,7 +83,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="Noesis.api" />
-      <option name="PARAMETERS" value="run-server" />
+      <option name="PARAMETERS" value="run-server --database mongodb://127.0.0.1:6767" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -136,28 +148,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="Noesis.client" />
-      <option name="PARAMETERS" value="upload-sample $PROJECT_DIR$/sample_updated.mind.gz" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Noesis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="Noesis.gui" />
-      <option name="PARAMETERS" value="run-server" />
+      <option name="PARAMETERS" value="upload-sample $PROJECT_DIR$/tests/data/test_file.mind.gz" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -178,28 +169,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="Noesis.parsers" />
-      <option name="PARAMETERS" value="run-parser pose &quot;rabbitmq://127.0.0.1:4334/&quot;" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="true" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="saver" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Noesis" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="Noesis.saver" />
-      <option name="PARAMETERS" value="run-saver" />
+      <option name="PARAMETERS" value="run-parser color_image &quot;rabbitmq://127.0.0.1:5672/&quot;" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="true" />
@@ -228,7 +198,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_client.test_client" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_api.test_api_get_user" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -239,11 +209,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_client.test_client&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_api_get_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_saver.test_saver" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_api.test_api_get_user_snapshot_result_specific" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Noesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -254,7 +224,52 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_saver.test_saver&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_api_get_user_snapshot_result_specific&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_api.test_api_get_user_snapshot_results" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_api_get_user_snapshot_results&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_api.test_api_get_user_snapshots" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_api_get_user_snapshots&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_api.test_api_users" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Noesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_api.test_api_users&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -264,19 +279,20 @@
       <item itemvalue="Python.server" />
       <item itemvalue="Python.client" />
       <item itemvalue="Python.parser" />
-      <item itemvalue="Python.saver" />
-      <item itemvalue="Python.gui" />
       <item itemvalue="Python.api" />
-      <item itemvalue="Python tests.pytest for test_client.test_client" />
-      <item itemvalue="Python tests.pytest for test_saver.test_saver" />
+      <item itemvalue="Python tests.pytest for test_api.test_api_users" />
+      <item itemvalue="Python tests.pytest for test_api.test_api_get_user" />
+      <item itemvalue="Python tests.pytest for test_api.test_api_get_user_snapshots" />
+      <item itemvalue="Python tests.pytest for test_api.test_api_get_user_snapshot_results" />
+      <item itemvalue="Python tests.pytest for test_api.test_api_get_user_snapshot_result_specific" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.api" />
-        <item itemvalue="Python.gui" />
-        <item itemvalue="Python tests.pytest for test_client.test_client" />
-        <item itemvalue="Python tests.pytest for test_saver.test_saver" />
-        <item itemvalue="Python.saver" />
+        <item itemvalue="Python tests.pytest for test_api.test_api_get_user_snapshot_result_specific" />
+        <item itemvalue="Python tests.pytest for test_api.test_api_get_user_snapshot_results" />
+        <item itemvalue="Python tests.pytest for test_api.test_api_get_user_snapshots" />
+        <item itemvalue="Python tests.pytest for test_api.test_api_get_user" />
+        <item itemvalue="Python tests.pytest for test_api.test_api_users" />
       </list>
     </recent_temporary>
   </component>
@@ -578,7 +594,28 @@
       <option name="project" value="LOCAL" />
       <updated>1590448016363</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Dockers work. trying to fix tests in travis">
+      <created>1590448227994</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1590448227994</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Dockers work. trying to fix tests in travis">
+      <created>1590511819902</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1590511819902</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Dockers work. trying to fix tests in travis">
+      <created>1590512011515</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1590512011515</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -655,11 +692,6 @@
           <option name="timeStamp" value="460" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Noesis/api/api.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="463" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Noesis/parsers/parse_color_image.py</url>
           <line>6</line>
           <option name="timeStamp" value="496" />
@@ -702,11 +734,6 @@
           <url>file://$PROJECT_DIR$/Noesis/saver/__main__.py</url>
           <line>50</line>
           <option name="timeStamp" value="517" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Noesis/data_base/mongodb.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="518" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Noesis/gui/__main__.py</url>
@@ -804,11 +831,6 @@
           <option name="timeStamp" value="619" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Noesis/api/api.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="621" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_saver.py</url>
           <line>56</line>
           <option name="timeStamp" value="629" />
@@ -817,6 +839,26 @@
           <url>file://$PROJECT_DIR$/Noesis/parsers/__main__.py</url>
           <line>38</line>
           <option name="timeStamp" value="630" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_saver.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="631" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Noesis/saver/saver.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="637" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_api.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="654" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_api.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="655" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

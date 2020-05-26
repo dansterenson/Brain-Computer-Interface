@@ -6,7 +6,7 @@ API & CLI
 
 The GUI consumes the API and reflects it
 
-    >>> from cortex.gui import run_server
+    >>> from Noesis.gui import run_server
     >>> run_server(
     ...     host = '127.0.0.1',
     ...     port = 8080,
@@ -18,7 +18,7 @@ The GUI consumes the API and reflects it
 
 .. code-block:: bash
 
-    $ python -m cortex.gui run-server \
+    $ python -m Noesis.gui run-server \
       -h/--host '127.0.0.1'       \
       -p/--port 8080              \
       -H/--api-host '127.0.0.1'   \

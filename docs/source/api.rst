@@ -18,7 +18,7 @@ And the following CLI:
 
 .. code-block:: bash
 
-    $ python -m cortex.api run-server \
+    $ python -m Noesis.api run-server \
       -h/--host '127.0.0.1'       \
       -p/--port 5000              \
       -d/--database 'mongodb://localhost:27017'

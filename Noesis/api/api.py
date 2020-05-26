@@ -10,7 +10,7 @@ cors = CORS(app)
 def run_api_server(host, port, database_url):
     data_base = DataBase(database_url)
     app.config["DATA_BASE"] = data_base
-    app.logger.addHandler(create_logger('api'))
+    #app.logger.addHandler(create_logger('api'))
     app.run(host, port, threaded=True)
 
 

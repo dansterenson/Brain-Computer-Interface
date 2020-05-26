@@ -1,10 +1,10 @@
 .env/
 .idea/
-.pytest_cache/
-docs/build/
-dataFiles/
-.Brain_Computer_Interface.egg-info/
-.dist/
-.build
-**/sample.mind
+/.pytest_cache/
+/docs/build/
 **/sample_updated.mind.gz
+/Brain_Computer_Interface.egg-info/
+/build/
+/dist/
+/log_files/
+/users/
