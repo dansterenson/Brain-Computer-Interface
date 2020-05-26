@@ -1,7 +1,7 @@
 from PIL import Image
 import pathlib
 from .parser_manager import user_info_data
-
+import os
 
 def parse(data):
     color_img_width, color_img_height, color_img_path = data['color_image']
@@ -10,8 +10,9 @@ def parse(data):
     with open(data_path, 'rb') as file:
         data_in_bytes = file.read()
     image_size = (color_img_width, color_img_height)
-    image = Image.frombytes('RGB', image_size, data_in_bytes)
-    image.save(parsed_path)
+    if data_in_bytes != b'':
+        image = Image.frombytes('RGB', image_size, data_in_bytes)
+        image.save(parsed_path)
     user_info = user_info_data(data)
     return {'user_info': user_info,
             'timestamp': data['timestamp'],
