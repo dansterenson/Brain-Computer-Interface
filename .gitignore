@@ -1,5 +1,5 @@
-.env/
-.idea/
+/.env/
+/.idea/
 /.pytest_cache/
 /docs/build/
 **/sample_updated.mind.gz

@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb77ef9-f0fc-49eb-a276-2391837ee24f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/__main__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/api/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/reader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/saver/saver.py" beforeDir="false" afterPath="$PROJECT_DIR$/Noesis/saver/saver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/text1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/thought.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Noesis/web.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/api.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/api.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/gui.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/gui.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -615,7 +603,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590512011515</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Addred api tester and fixed Travis">
+      <created>1590532123780</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1590532123780</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Addred api tester and fixed Travis">
+      <created>1590532292645</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1590532292645</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -656,7 +658,8 @@
     <MESSAGE value="added animate.css to git" />
     <MESSAGE value="dockers work, need to fix shared volume" />
     <MESSAGE value="Dockers work. trying to fix tests in travis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockers work. trying to fix tests in travis" />
+    <MESSAGE value="Addred api tester and fixed Travis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addred api tester and fixed Travis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
