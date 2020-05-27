@@ -46,8 +46,6 @@ def test_saver(capsys):
         s.save('pose', data3)
 
 
-        captured = capsys.readouterr()
-        #assert capsys.our == f"Saver saved parsed data {data} to db"
         assert s.db.get_users() == [{'user_id': 5, 'user_name': 'Dan Sterenson', 'birthday': 767404800, 'gender': 0},
                                     {'user_id': 7, 'user_name': 'Dan Gittik', 'birthday': 76734534800, 'gender': 0}]
 

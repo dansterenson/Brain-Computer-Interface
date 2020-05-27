@@ -2,8 +2,8 @@ import pytest
 from Noesis.parsers import run_parser
 import pathlib
 import json
-from mock import patch, MagicMock
-
+from shutil import copyfile
+import os
 
 @pytest.fixture
 def file_data():
@@ -11,6 +11,7 @@ def file_data():
     with open(message_path, 'r') as file:
         data = json.load(file)
     return data
+
 
 def test_feelings_parser(file_data):
     parsed_result = run_parser('feelings', file_data)
@@ -28,3 +29,30 @@ def test_pose_parser(file_data):
     assert parsed_result['result_name'] == 'pose'
     assert parsed_result['data']['translation'] == [0.1, 0.2, 0.3]
     assert parsed_result['data']['rotation'] == [0.1, 0.2, 0.3, 0.4]
+
+
+def test_color_image(file_data):
+    parsed_result = run_parser('color_image', file_data)
+    assert parsed_result is not None
+    assert parsed_result['result_name'] == 'color_image'
+    assert parsed_result['data']['width'] == 1920
+    assert parsed_result['data']['height'] == 1080
+    assert parsed_result['data']['parsed_path'] == "tests/data/parsed_color_image.jpg"
+
+
+def test_depth_image(file_data):
+    parsed_result = run_parser('depth_image', file_data)
+    assert parsed_result is not None
+    assert parsed_result['result_name'] == 'depth_image'
+    assert parsed_result['data']['width'] == 1280
+    assert parsed_result['data']['height'] == 720
+    assert parsed_result['data']['parsed_path'] == "tests/data/parsed_depth_image.jpg"
+
+
+def test_adding_parser(file_data):
+    copyfile("tests/data/parse_test_parser.py", "Noesis/parsers/parse_test_parser.py")
+    parsed_result = run_parser('test_parser', file_data)
+    os.remove("Noesis/parsers/parse_test_parser.py")
+    assert parsed_result is not None
+    assert parsed_result['result_name'] == 'test_parser'
+    assert parsed_result['data'] == {'testing_adding_parser'}

@@ -1,0 +1,14 @@
+**/sample_updated.mind.gz
+/.env/
+/.idea/
+/.pytest_cache/
+/docs/build/
+/Brain_Computer_Interface.egg-info/
+/build/
+/dist/
+/log_files/
+/users/
+/idea/
+/.git/
+tests
+**/build

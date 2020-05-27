@@ -12,8 +12,9 @@ def parse(data):
     with open(data_path, 'rb') as file:
         data_in_bytes = file.read()
     image_size = (depth_img_width, depth_img_height)
-    image = Image.frombytes('F', image_size, data_in_bytes)
-    plt.imsave(parsed_path, image, cmap=cmap.get_cmap("RdGy"))
+    if data_in_bytes != b'':
+        image = Image.frombytes('F', image_size, data_in_bytes)
+        plt.imsave(parsed_path, image, cmap=cmap.get_cmap("RdGy"))
     user_info = user_info_data(data)
     return {'user_info': user_info,
             'timestamp': data['timestamp'],
