@@ -40,7 +40,7 @@ The results are then exposed via a RESTful API, which is consumed by a CLI; ther
 To run all of the services together for a quick start using Docker:
 
    ```sh
-    $ ./run-pipeline.sh
+    $ .scripts/run-pipeline.sh
    ```
 When all services are running, you can access the GUI at http://localhost:8080
 
@@ -62,7 +62,7 @@ After uploading is completed, you can view the results in the GUI:
 Or use the CLI to see the results
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/38375556/82829891-0a7a0d80-9ebd-11ea-84ec-4893894a996c.gif" width="750"/>
+<img src="https://user-images.githubusercontent.com/38375556/83055082-09cbad80-a05c-11ea-85f7-df90b1b8fb6f.gif" width="750"/>
 </p>
 
 ## Documentation

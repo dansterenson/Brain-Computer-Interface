@@ -1,6 +1,6 @@
 FROM node:10-alpine as builder
 
-COPY gui/my-gui /Noesis/Noesis/gui/my-gui
+COPY Noesis/gui/my-gui /Noesis/Noesis/gui/my-gui
 RUN rm -rf /Noesis/Noesis/gui/my-gui/build
 
 RUN cd Noesis/Noesis/gui/my-gui
@@ -15,7 +15,7 @@ RUN yarn build
 
 FROM python:3.8-slim
 
-COPY gui /Noesis/Noesis/gui
+COPY Noesis/gui /Noesis/Noesis/gui
 RUN rm -rf /Noesis/Noesis/gui/my-gui
 
 RUN mv /Noesis/Noesis/gui/requirements.txt /Noesis/Noesis

@@ -1,7 +1,7 @@
 FROM python:3.8-slim
 
-COPY api /Noesis/Noesis/api
-COPY data_base /Noesis/Noesis/data_base
+COPY Noesis/api /Noesis/Noesis/api
+COPY Noesis/data_base /Noesis/Noesis/data_base
 RUN mv /Noesis/Noesis/api/requirements.txt /Noesis/Noesis
 
 WORKDIR /Noesis

@@ -55,7 +55,12 @@ class Users extends Component{
                 {<ReactTable
                     data={items}
                     columns={columns}
-                    defaultPageSize={5}
+                    defaultPageSize={10}
+                    defaultSortDesc={true}
+                    defaultSorted={[{ // the sorting model for the table
+                        id: 'user_id',
+                        desc: false
+                    }]}
                     minRows={0}
                 />}
             </div>

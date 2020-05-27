@@ -2,7 +2,7 @@ FROM python:3.8-slim
 ARG PARSER_NAME
 COPY parsers /Noesis/Noesis/parsers
 
-COPY msg_queue /Noesis/Noesis/msg_queue
+COPY Noesis/msg_queue /Noesis/Noesis/msg_queue
 RUN mv /Noesis/Noesis/parsers/requirements.txt /Noesis/Noesis
 ARG PARSER_NAME
 ENV PARSER_ENV_NAME=${PARSER_NAME}
