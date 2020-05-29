@@ -6,8 +6,10 @@ before_install:
   - "python setup.py install"
 install:
   - pip install -r requirements.txt
+  - pip install coverage
+  - pip install pytest-cov
 script:
-  - pytest  --cov-report xml --cov=tests
+  - py.test --cov-report=xml --cov=tests/
 notifications:
   email:
     on_success: never
