@@ -14,4 +14,4 @@ notifications:
     on_success: never
     on_failure: always
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
