@@ -35,3 +35,4 @@ def test_user_parsing(parse_data):
     assert snapshot.feelings.thirst == 0.0
     assert snapshot.feelings.happiness == 0.0
     assert snapshot.feelings.exhaustion == 0.0
+
