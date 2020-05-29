@@ -1,19 +1,14 @@
 language: python
 python:
   - "3.8"
-before_install:
-  - "pip install -U pip"
-  - "python setup.py install"
-  - pip install codecov
 install:
   - pip install -r requirements.txt
 script:
-  - pytest --cov=tests --cov-report=xml
-env:
-  - CODECOV_TOKEN="e6bedb1f-78d0-4f2c-b053-ab72b73b5451"
+  - python -m pytest --cov-report term --cov=Noesis
+
 notifications:
   email:
     on_success: never
     on_failure: always
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - codecov
