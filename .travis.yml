@@ -4,9 +4,9 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python -m pytest --cov-report term --cov=Noesis
-codecov:
-  token: e6bedb1f-78d0-4f2c-b053-ab72b73b5451
+  - python -m pytest --cov-report term --cov=tests
+env:
+  - CODECOV_TOKEN="e6bedb1f-78d0-4f2c-b053-ab72b73b5451"
 notifications:
   email:
     on_success: never
