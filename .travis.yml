@@ -8,7 +8,7 @@ before_install:
 install:
   - pip install -r requirements.txt
 script:
-  - pytest
+  - pytest --cov=tests --cov-report=xml
 notifications:
   email:
     on_success: never
