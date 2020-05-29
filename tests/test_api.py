@@ -2,12 +2,9 @@ import pytest
 import mongomock
 import pytest
 from Noesis.saver import Saver
-import json
 from mock import patch, MagicMock
 import requests
 from Noesis.api import run_api_server
-from multiprocessing import Process
-import multiprocessing, logging
 import threading
 import time
 
