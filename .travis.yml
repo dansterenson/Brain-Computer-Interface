@@ -9,6 +9,8 @@ install:
   - pip install -r requirements.txt
 script:
   - pytest --cov=tests --cov-report=xml
+env:
+  - CODECOV_TOKEN="e6bedb1f-78d0-4f2c-b053-ab72b73b5451"
 notifications:
   email:
     on_success: never
