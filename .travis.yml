@@ -4,7 +4,7 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python -m pytest --cov-report term --cov=tests
+  - python -m pytest --cov-report term --cov=Noesis
 env:
   - CODECOV_TOKEN="e6bedb1f-78d0-4f2c-b053-ab72b73b5451"
 notifications:
@@ -12,4 +12,5 @@ notifications:
     on_success: never
     on_failure: always
 after_success:
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
+
