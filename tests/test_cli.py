@@ -40,7 +40,6 @@ data3 = {'user_info': {
 }
 
 
-
 @pytest.fixture
 def create_api_and_cli():
     with patch("pymongo.MongoClient", MagicMock(return_value=mongomock.MongoClient())):
