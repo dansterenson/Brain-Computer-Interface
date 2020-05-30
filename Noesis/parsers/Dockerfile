@@ -1,6 +1,6 @@
 FROM python:3.8-slim
 ARG PARSER_NAME
-COPY parsers /Noesis/Noesis/parsers
+COPY Noesis/parsers /Noesis/Noesis/parsers
 
 COPY Noesis/msg_queue /Noesis/Noesis/msg_queue
 RUN mv /Noesis/Noesis/parsers/requirements.txt /Noesis/Noesis
