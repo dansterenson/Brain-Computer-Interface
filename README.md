@@ -1,5 +1,6 @@
 [![codecov](https://codecov.io/gh/dansterenson/Noesis/branch/master/graph/badge.svg)](https://codecov.io/gh/dansterenson/Noesis)
 [![Build Status](https://travis-ci.org/dansterenson/Noesis.svg?branch=master)](https://travis-ci.org/dansterenson/Noesis)
+[![Documentation Status](https://readthedocs.org/projects/noesis/badge/?version=latest)](https://noesis.readthedocs.io/en/latest/?badge=latest)
 
 # Noesis
 Noesis is project that supports a Brain Computer Interface — imaginary hardware that can read minds, and upload snapshots of cognitions.
