@@ -17,7 +17,7 @@ def file_data():
 
 
 def test_parse_cli():
-    message_path = str(pathlib.Path('tests/data/test_data.json'))
+    message_path = str(pathlib.Path('tests/data/test_data.json').absolute())
     process = Popen(["python", "-m", "Noesis.parsers", "parse", "pose", message_path], stdout=PIPE)
     time.sleep(5)
     (output, err) = process.communicate()
