@@ -19,8 +19,9 @@ def file_data():
 def test_parse_cli():
     message_path = str(pathlib.Path('tests/data/test_data.json'))
     process = Popen(["python", "-m", "Noesis.parsers", "parse", "pose", message_path], stdout=PIPE)
-    time.sleep(2)
+    time.sleep(5)
     (output, err) = process.communicate()
+    time.sleep(5)
     assert b"{'user_info': {'user_id': 5, 'user_name': 'Dan Sterenson', 'birthday': 767404800, 'gender': 0}" in output
     assert b"'timestamp': '12345678'" in output
     assert b"result_name': 'pose'" in output
