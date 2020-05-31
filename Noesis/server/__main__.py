@@ -5,7 +5,6 @@ from ..msg_queue import MessageQueue
 from .utils.logger import create_logger
 
 
-
 @click.group()
 def cli():
     pass
