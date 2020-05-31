@@ -50,14 +50,14 @@ How To Add New Parsers
 ^^^^^^^^^^^^^^^^^^^^^^
 
 #. Create a new python file in Noesis.parsers with a name of '*parser_<parser_name_goes_here>.py*'.
-#. Inside the new file, add a function (can be is a class) named "parse" as follows:
+#. Inside the new file, add a function (can be in a class) named "parse" as follows:
 #. Return a json format of the user's info, timestamp, parser's name and the parsed data.
 #. Implement the parse method as follows:
 
  .. code-block:: python
 
-       def parse(cls, data):
-           metadata = cls.get_metadata(data)
+       def parse(data):
+           metadata = get_metadata(data)
            #
            # parse data
            #

@@ -9,4 +9,5 @@
 /log_files/
 /users/
 /idea/
-
+/docker.sh
+**/deploy.sh

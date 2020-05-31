@@ -1,9 +1,10 @@
-
 import mongomock
 import pytest
 from Noesis.saver import Saver
 import json
 from mock import patch, MagicMock
+from subprocess import Popen, PIPE
+import pathlib
 
 data1 = {'user_info': {
     "user_id": 5,
@@ -34,6 +35,13 @@ data3 = {'user_info': {
     'data': "testSaver2",
     'timestamp': 767404842
 }
+
+
+def test_save_cli():
+        message_path = str(pathlib.Path('tests/data/pose_parsed.json').absolute())
+        process = Popen(["python", "-m", "Noesis.saver", "save", "pose", message_path], stdout=PIPE)
+        (output, err) = process.communicate()
+        #assert s.db.get_users()
 
 
 def test_saver(capsys):

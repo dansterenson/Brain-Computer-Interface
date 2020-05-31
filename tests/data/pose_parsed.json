@@ -1,0 +1,7 @@
+
+{
+    "user_info": {"user_id": 5, "user_name": "Dan Sterenson", "birthday": 767404800, "gender": 0},
+    "timestamp": "12345678",
+    "result_name": "pose",
+    "data": {"translation": [0.1, 0.2, 0.3], "rotation": [0.1, 0.2, 0.3, 0.4]}
+}

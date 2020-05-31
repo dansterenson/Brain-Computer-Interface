@@ -1,6 +1,9 @@
+[![codecov](https://codecov.io/gh/dansterenson/Noesis/branch/master/graph/badge.svg)](https://codecov.io/gh/dansterenson/Noesis)
+[![Build Status](https://travis-ci.org/dansterenson/Noesis.svg?branch=master)](https://travis-ci.org/dansterenson/Noesis)
 
 # Noesis
-A project which includes a client, which streams cognition snapshots to a server, which then publishes them to a message queue, where multiple parsers read the snapshot, parse various parts of it, and publish the parsed results, which are then saved to a database.
+Noesis is project that supports a Brain Computer Interface — imaginary hardware that can read minds, and upload snapshots of cognitions.
+The project includes a client, which streams cognition snapshots to a server, which then publishes them to a message queue, where multiple parsers read the snapshot, parse various parts of it, and publish the parsed results, which are then saved to a database.
 The results are then exposed via a RESTful API, which is consumed by a CLI; there's also a GUI, which visualizes the results in various ways.
 
 <p align="center">
