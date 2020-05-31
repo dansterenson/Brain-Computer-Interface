@@ -37,12 +37,6 @@ data3 = {'user_info': {
 }
 
 
-def test_save_cli():
-        message_path = str(pathlib.Path('tests/data/pose_parsed.json').absolute())
-        process = Popen(["python", "-m", "Noesis.saver", "save", "pose", message_path], stdout=PIPE)
-        (output, err) = process.communicate()
-        #assert s.db.get_users()
-
 
 def test_saver(capsys):
 
