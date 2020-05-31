@@ -19,10 +19,12 @@ def test_parse_cli():
     message_path = str(pathlib.Path('tests/data/test_data.json').absolute())
     process = Popen(["python", "-m", "Noesis.parsers", "parse", "pose", message_path], stdout=PIPE)
     (output, err) = process.communicate()
+    assert output == b"{'user_info': {'user_id': 5, 'user_name': 'Dan Sterenson', 'birthday': 767404800, 'gender': 0}"
     assert b"{'user_info': {'user_id': 5, 'user_name': 'Dan Sterenson', 'birthday': 767404800, 'gender': 0}" in output
     assert b"'timestamp': '12345678'" in output
     assert b"result_name': 'pose'" in output
     assert b"'data': {'translation': [0.1, 0.2, 0.3], 'rotation': [0.1, 0.2, 0.3, 0.4]}" in output
+
 
 def test_feelings_parser(file_data):
     parsed_result = run_parser('feelings', file_data)
