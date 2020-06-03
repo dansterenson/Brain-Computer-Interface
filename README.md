@@ -3,7 +3,7 @@
 [![Documentation Status](https://readthedocs.org/projects/noesis/badge/?version=latest)](https://noesis.readthedocs.io/en/latest/?badge=latest)
 
 # Noesis
-Noesis is project that supports a Brain Computer Interface — imaginary hardware that can read minds, and upload snapshots of cognitions.
+Noesis is project that supports a Brain Computer Interface — imaginary hardware that can read minds, and upload snapshots of cognition.
 The project includes a client, which streams cognition snapshots to a server, which then publishes them to a message queue, where multiple parsers read the snapshot, parse various parts of it, and publish the parsed results, which are then saved to a database.
 The results are then exposed via a RESTful API, which is consumed by a CLI; there's also a GUI, which visualizes the results in various ways.
 
