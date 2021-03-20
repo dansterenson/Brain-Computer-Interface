@@ -19,7 +19,7 @@ flask-cors==3.0.8
 idna==2.8
 imagesize==1.1.0
 itsdangerous==1.1.0
-Jinja2==2.10.3
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 more-itertools==7.2.0
 pillow==6.2.1
