@@ -2,6 +2,6 @@ click==7.1.2
 Flask==1.1.2
 google
 matplotlib
-protobuf==3.12.1
+protobuf==3.18.3
 pika==1.1.0
 
